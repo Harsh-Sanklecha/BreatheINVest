@@ -1,0 +1,67 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: 'Poppins', sans-serif;
+}
+
+:root {
+  --pink: #ffe6e6;
+}
+
+body {
+  height: 100vh;
+  background: -webkit-gradient(linear, left top, left bottom, from(var(--pink)), color-stop(#fff), color-stop(#fff), color-stop(#fff), to(#fff));
+  background: linear-gradient(var(--pink), #fff, #fff, #fff, #fff);
+}
+
+.navigation-bar .navbar {
+  background: transparent;
+}
+
+.navigation-bar .navbar .navbar-brand img {
+  height: 5rem;
+  width: 8rem;
+}
+
+.navigation-bar .navbar .nav-right img {
+  height: 2rem;
+  width: 2rem;
+}
+
+.main-wrapper .main {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.main-wrapper .main img {
+  width: 70%;
+  height: auto;
+}
+
+.main-wrapper .main h2 {
+  color: #636162;
+  line-height: 4rem;
+  font-size: 3rem;
+  font-weight: 800;
+  padding: 1.5rem 0;
+}
+
+.main-wrapper .main .bottom-caution {
+  width: 100%;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.main-wrapper .main i {
+  padding: 0 1rem;
+  color: red;
+}
+/*# sourceMappingURL=style.css.map */
