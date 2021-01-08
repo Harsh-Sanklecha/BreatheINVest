@@ -9,6 +9,7 @@ html {
 
 :root {
   --pink: #ffe6e6;
+  --grey: #636162;
 }
 
 body {
@@ -45,7 +46,7 @@ body {
 }
 
 .main-wrapper .main h2 {
-  color: #636162;
+  color: var(--grey);
   line-height: 4rem;
   font-size: 3rem;
   font-weight: 800;
@@ -64,5 +65,155 @@ body {
   font-size: 1.5rem;
   padding: 0 1rem;
   color: red;
+}
+
+.normal-wrapper {
+  background: -webkit-gradient(linear, left top, left bottom, from(#a1f69b), color-stop(#fff), to(#fff));
+  background: linear-gradient(#a1f69b, #fff, #fff);
+  height: 100%;
+  padding-top: 1%;
+}
+
+.normal-wrapper h3 {
+  margin-top: 2rem;
+  font-weight: 800;
+  font-size: 3rem;
+  font-family: "Poppins";
+}
+
+.normal-wrapper p {
+  font-weight: 600;
+  font-family: "Poppins";
+  font-size: 1rem;
+}
+
+.normal-wrapper .precautions {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  margin: 5rem 0;
+  padding: 1rem 8rem;
+}
+
+.normal-wrapper .precautions h5 {
+  font-weight: 600;
+  font-size: 2.5rem;
+  color: #ffaec8;
+}
+
+.normal-wrapper .precautions button {
+  background-color: #ffaec8;
+  padding: 0.5rem;
+  top: 50%;
+  bottom: 50%;
+}
+
+<<<<<<< HEAD
+.button-start {
+  margin-top: 1.5rem;
+  position: relative;
+  height: 13rem;
+}
+
+.button-start button {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  background: #fff;
+  border-radius: 50%;
+  padding: 5rem;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+
+.instructions-wrapper {
+  background: #fff;
+  max-width: 100%;
+  width: 50%;
+  -webkit-transform: translateX(50%);
+          transform: translateX(50%);
+  overflow: hidden;
+  padding: 2rem 0;
+}
+
+.instructions-wrapper h3 {
+  font-family: 'Poppins';
+  font-weight: 600;
+  font-size: 2rem;
+}
+
+.instructions-wrapper h3 span {
+  color: red;
+}
+
+.instructions-wrapper .instruction-img-wrapper {
+  width: 100%;
+  overflow: hidden;
+}
+
+.instructions-wrapper .instruction-img-wrapper .instruction img {
+  height: 8rem;
+  width: 8rem;
+}
+
+.instructions-wrapper .instruction-img-wrapper .instruction .timer-bottom {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  padding: 1rem 0;
+  width: 5rem;
+  border-radius: 50%;
+=======
+.report-wrapper {
+  padding-top: 1%;
+  height: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, from(var(--pink)), color-stop(#fff), color-stop(#fff), color-stop(#fff), to(#fff));
+  background: linear-gradient(var(--pink), #fff, #fff, #fff, #fff);
+}
+
+.report-wrapper .report {
+  width: 40%;
+  background: #fff;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  margin: 2rem 0;
+  padding: 1% 2rem;
+}
+
+.report-wrapper .report h5 {
+  font-weight: 600;
+  font-size: 2.5rem;
+  color: #ffaec8;
+}
+
+.report-wrapper .report label {
+  text-align: left;
+  font-weight: 600;
+  font-size: 1.2rem;
+  color: #ffaec8;
+}
+
+.report-wrapper .report input {
+  border: 1px solid var(--pink);
+}
+
+.report-wrapper .report button {
+  background-color: #ffaec8;
+  padding: 0.5rem;
+  top: 50%;
+  bottom: 50%;
+}
+
+.report-wrapper .report .nav-logo {
+  padding: 2rem;
+>>>>>>> 2ff8ca2b2b8b6282c367c3d7cf71f4248468bb73
 }
 /*# sourceMappingURL=style.css.map */

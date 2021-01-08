@@ -8,6 +8,7 @@ html{
 }
 :root{
     --pink: #ffe6e6;    
+    --grey: #636162;
 }
 
 body{
@@ -52,7 +53,7 @@ body{
         }
 
         h2{
-            color: #636162;
+            color: var(--grey);
             line-height: 4rem;
             font-size: 3rem;
             font-weight: 800;
@@ -71,4 +72,159 @@ body{
             color: red;
         }
     }
+<<<<<<< HEAD
 }
+=======
+
+
+
+}
+
+.normal-wrapper{
+    background: linear-gradient(#a1f69b,#fff,#fff);
+    height: 100%;
+    padding-top: 1%;
+    h3{
+        margin-top: 2rem;
+        font-weight: 800;
+        font-size: 3rem;
+        font-family: "Poppins";
+    }
+    p{
+        font-weight: 600;
+        font-family: "Poppins";
+        font-size: 1rem;
+
+    }
+    .precautions{
+        position:absolute;
+        top: 55%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        margin: 5rem 0;
+        padding: 1rem 8rem;
+
+        h5{
+            font-weight: 600;
+            font-size: 2.5rem;
+            color: #ffaec8;
+            
+        }
+
+        button{
+            background-color: #ffaec8;
+            padding: 0.5rem;
+            top: 50%;
+            bottom: 50%;
+        }
+    }
+}
+<<<<<<< HEAD
+
+.button-start{
+    margin-top: 1.5rem;
+    position: relative;
+    height: 13rem;
+    
+    
+    button{
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        background: #fff;
+        border-radius: 50%;
+        padding: 5rem;
+        font-size: 1.5rem;
+        text-transform: uppercase;
+    }
+
+   
+}
+
+.instructions-wrapper{
+    background: #fff;
+    max-width: 100%;
+    width: 50%;
+    transform: translateX(50%);
+    overflow: hidden;
+    padding: 2rem 0;
+
+    h3{
+        font-family: 'Poppins';
+        font-weight: 600;
+        font-size: 2rem;
+
+        span{
+            color: red;
+        }
+    }
+
+    .instruction-img-wrapper{
+        width: 100%;
+        overflow: hidden;
+
+        .instruction{
+
+
+            img{
+                height: 8rem;
+                width: 8rem;
+            }
+
+            .timer-bottom{
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+                padding: 1rem 0;
+                width: 5rem;
+                border-radius: 50%;
+            }
+        }
+    }
+=======
+.report-wrapper{
+    padding-top: 1%;
+    height: 100%;
+    background: linear-gradient(var(--pink),#fff,#fff,#fff,#fff);
+    .report{
+        width: 40%;
+        background: #fff;
+        position: absolute;
+        top: 45%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        margin: 2rem 0;
+        padding: 1% 2rem;
+
+        h5{
+            font-weight: 600;
+            font-size: 2.5rem;
+            color: #ffaec8;
+            
+        }
+
+        label{
+            text-align: left;
+            font-weight: 600;
+            font-size: 1.2rem ;
+            color: #ffaec8;
+        }
+
+        input{
+            border: 1px solid var(--pink);
+        }
+
+        button{
+            background-color: #ffaec8;
+            padding: 0.5rem;
+            top: 50%;
+            bottom: 50%;
+        }
+        .nav-logo{
+            padding: 2rem;
+        }
+}
+>>>>>>> 2ff8ca2b2b8b6282c367c3d7cf71f4248468bb73
+}
+>>>>>>> 0a1ef404f1f39ab5fe85eea1825acebbd09e6785
