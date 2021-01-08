@@ -64,4 +64,47 @@ body {
   padding: 0 1rem;
   color: red;
 }
+
+.normal-wrapper {
+  background: -webkit-gradient(linear, left top, left bottom, from(#a1f69b), color-stop(#fff), to(#fff));
+  background: linear-gradient(#a1f69b, #fff, #fff);
+  height: 100%;
+  padding-top: 1%;
+}
+
+.normal-wrapper h3 {
+  margin-top: 2rem;
+  font-weight: 800;
+  font-size: 3rem;
+  font-family: "Poppins";
+}
+
+.normal-wrapper p {
+  font-weight: 600;
+  font-family: "Poppins";
+  font-size: 1rem;
+}
+
+.normal-wrapper .precautions {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  margin: 5rem 0;
+  padding: 1rem 8rem;
+}
+
+.normal-wrapper .precautions h5 {
+  font-weight: 600;
+  font-size: 2.5rem;
+  color: #ffaec8;
+}
+
+.normal-wrapper .precautions button {
+  background-color: #ffaec8;
+  padding: 0.5rem;
+  top: 50%;
+  bottom: 50%;
+}
 /*# sourceMappingURL=style.css.map */

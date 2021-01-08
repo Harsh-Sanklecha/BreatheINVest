@@ -69,4 +69,47 @@ body{
             color: red;
         }
     }
+
+
+
+}
+
+.normal-wrapper{
+    background: linear-gradient(#a1f69b,#fff,#fff);
+    height: 100%;
+    padding-top: 1%;
+    h3{
+        margin-top: 2rem;
+        font-weight: 800;
+        font-size: 3rem;
+        font-family: "Poppins";
+    }
+    p{
+        font-weight: 600;
+        font-family: "Poppins";
+        font-size: 1rem;
+
+    }
+    .precautions{
+        position:absolute;
+        top: 55%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        margin: 5rem 0;
+        padding: 1rem 8rem;
+
+        h5{
+            font-weight: 600;
+            font-size: 2.5rem;
+            color: #ffaec8;
+            
+        }
+
+        button{
+            background-color: #ffaec8;
+            padding: 0.5rem;
+            top: 50%;
+            bottom: 50%;
+        }
+    }
 }
