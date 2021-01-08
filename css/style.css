@@ -9,6 +9,7 @@ html {
 
 :root {
   --pink: #ffe6e6;
+  --grey: #636162;
 }
 
 body {
@@ -45,7 +46,7 @@ body {
 }
 
 .main-wrapper .main h2 {
-  color: #636162;
+  color: var(--grey);
   line-height: 4rem;
   font-size: 3rem;
   font-weight: 800;
@@ -106,5 +107,64 @@ body {
   padding: 0.5rem;
   top: 50%;
   bottom: 50%;
+}
+
+.button-start {
+  margin-top: 1.5rem;
+  position: relative;
+  height: 13rem;
+}
+
+.button-start button {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  background: #fff;
+  border-radius: 50%;
+  padding: 5rem;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+
+.instructions-wrapper {
+  background: #fff;
+  max-width: 100%;
+  width: 50%;
+  -webkit-transform: translateX(50%);
+          transform: translateX(50%);
+  overflow: hidden;
+  padding: 2rem 0;
+}
+
+.instructions-wrapper h3 {
+  font-family: 'Poppins';
+  font-weight: 600;
+  font-size: 2rem;
+}
+
+.instructions-wrapper h3 span {
+  color: red;
+}
+
+.instructions-wrapper .instruction-img-wrapper {
+  width: 100%;
+  overflow: hidden;
+}
+
+.instructions-wrapper .instruction-img-wrapper .instruction img {
+  height: 8rem;
+  width: 8rem;
+}
+
+.instructions-wrapper .instruction-img-wrapper .instruction .timer-bottom {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  padding: 1rem 0;
+  width: 5rem;
+  border-radius: 50%;
 }
 /*# sourceMappingURL=style.css.map */
