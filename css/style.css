@@ -107,4 +107,51 @@ body {
   top: 50%;
   bottom: 50%;
 }
+
+.report-wrapper {
+  padding-top: 1%;
+  height: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, from(var(--pink)), color-stop(#fff), color-stop(#fff), color-stop(#fff), to(#fff));
+  background: linear-gradient(var(--pink), #fff, #fff, #fff, #fff);
+}
+
+.report-wrapper .report {
+  width: 40%;
+  background: #fff;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  margin: 2rem 0;
+  padding: 1% 2rem;
+}
+
+.report-wrapper .report h5 {
+  font-weight: 600;
+  font-size: 2.5rem;
+  color: #ffaec8;
+}
+
+.report-wrapper .report label {
+  text-align: left;
+  font-weight: 600;
+  font-size: 1.2rem;
+  color: #ffaec8;
+}
+
+.report-wrapper .report input {
+  border: 1px solid var(--pink);
+}
+
+.report-wrapper .report button {
+  background-color: #ffaec8;
+  padding: 0.5rem;
+  top: 50%;
+  bottom: 50%;
+}
+
+.report-wrapper .report .nav-logo {
+  padding: 2rem;
+}
 /*# sourceMappingURL=style.css.map */
