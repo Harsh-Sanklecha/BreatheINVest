@@ -114,6 +114,7 @@ body{
         }
     }
 }
+<<<<<<< HEAD
 
 .button-start{
     margin-top: 1.5rem;
@@ -176,4 +177,48 @@ body{
             }
         }
     }
+=======
+.report-wrapper{
+    padding-top: 1%;
+    height: 100%;
+    background: linear-gradient(var(--pink),#fff,#fff,#fff,#fff);
+    .report{
+        width: 40%;
+        background: #fff;
+        position: absolute;
+        top: 45%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        margin: 2rem 0;
+        padding: 1% 2rem;
+
+        h5{
+            font-weight: 600;
+            font-size: 2.5rem;
+            color: #ffaec8;
+            
+        }
+
+        label{
+            text-align: left;
+            font-weight: 600;
+            font-size: 1.2rem ;
+            color: #ffaec8;
+        }
+
+        input{
+            border: 1px solid var(--pink);
+        }
+
+        button{
+            background-color: #ffaec8;
+            padding: 0.5rem;
+            top: 50%;
+            bottom: 50%;
+        }
+        .nav-logo{
+            padding: 2rem;
+        }
+}
+>>>>>>> 2ff8ca2b2b8b6282c367c3d7cf71f4248468bb73
 }
