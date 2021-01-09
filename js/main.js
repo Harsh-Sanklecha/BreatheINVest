@@ -1,10 +1,3 @@
-<<<<<<< HEAD
-checkHeadphone = function () {
-        window.plugins.headsetdetection.detect(function (detected) {
-            alert("Headphone " + detected)
-        })
-    }
-=======
 document.addEventListener('DOMContentLoaded', () => {
     const timeLeftDisplay = document.querySelector('#time-left')
     const startBtn = document.querySelector('#startButton')
@@ -20,4 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     )   
 })
->>>>>>> 0a1ef404f1f39ab5fe85eea1825acebbd09e6785
+
+$('#startButton').click(function(){
+    $('#startButton').innerHTML = "TEST";
+});
