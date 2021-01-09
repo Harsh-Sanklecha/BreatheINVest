@@ -89,7 +89,7 @@ body {
 
 .normal-wrapper .precautions {
   position: absolute;
-  top: 55%;
+  top: 60%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
@@ -347,5 +347,18 @@ body {
 .wheezes-wrapper .precautions .recommended-consultations .consultations h6 {
   text-transform: uppercase;
   margin: 0.5rem 0;
+}
+
+@media only screen and (max-width: 768px) {
+  .normal-wrapper .precautions {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    margin: 5rem 0;
+    padding: 1rem 4rem;
+    width: 80%;
+  }
 }
 /*# sourceMappingURL=style.css.map */
