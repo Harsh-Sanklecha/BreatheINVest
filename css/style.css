@@ -217,6 +217,7 @@ body {
   padding: 2rem;
 }
 
+<<<<<<< HEAD
 .repnorm-wrapper {
   padding-top: 5%;
   height: 100%;
@@ -334,5 +335,137 @@ body {
 
 .repwheezes-wrapper .repwheezes .nav-logo {
   padding: 2rem;
+=======
+.crackles-wrapper {
+  background: -webkit-gradient(linear, left top, left bottom, from(#f5f69b), color-stop(#fff), to(#fff));
+  background: linear-gradient(#f5f69b, #fff, #fff);
+  width: 100%;
+  height: 100%;
+  padding-top: 1%;
+}
+
+.crackles-wrapper h4 {
+  margin-top: 2rem;
+  font-weight: 800;
+  font-size: 1rem;
+  font-family: "Poppins";
+}
+
+.crackles-wrapper p {
+  font-weight: 600;
+  font-family: "Poppins";
+  font-size: 1rem;
+}
+
+.crackles-wrapper .precautions {
+  background: #fff;
+  padding: 1rem 4rem;
+}
+
+.crackles-wrapper .precautions ul {
+  padding: 0 2rem;
+}
+
+.crackles-wrapper .precautions h4 {
+  font-weight: 600;
+  font-size: 2rem;
+  color: #ffaec8;
+}
+
+.crackles-wrapper .precautions button {
+  background-color: #ffaec8;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.crackles-wrapper .precautions .recommended-consultations {
+  padding: 1rem;
+}
+
+.crackles-wrapper .precautions .recommended-consultations .consultations {
+  margin: 0  0.25rem !important;
+}
+
+.crackles-wrapper .precautions .recommended-consultations .consultations p {
+  font-size: 0.7rem;
+  font-weight: 400;
+}
+
+.crackles-wrapper .precautions .recommended-consultations .consultations img {
+  height: 5rem;
+  width: 5rem;
+  margin-bottom: 0.5rem;
+}
+
+.crackles-wrapper .precautions .recommended-consultations .consultations h6 {
+  text-transform: uppercase;
+  margin: 0.5rem 0;
+}
+
+.wheezes-wrapper {
+  background: -webkit-gradient(linear, left top, left bottom, from(#f5f69b), color-stop(#fff), to(#fff));
+  background: linear-gradient(#f5f69b, #fff, #fff);
+  width: 100%;
+  height: 100%;
+  padding-top: 1%;
+}
+
+.wheezes-wrapper h4 {
+  margin-top: 2rem;
+  font-weight: 800;
+  font-size: 1rem;
+  font-family: "Poppins";
+}
+
+.wheezes-wrapper p {
+  font-weight: 600;
+  font-family: "Poppins";
+  font-size: 1rem;
+}
+
+.wheezes-wrapper .precautions {
+  background: #fff;
+  padding: 1rem 4rem;
+}
+
+.wheezes-wrapper .precautions ul {
+  padding: 0 2rem;
+}
+
+.wheezes-wrapper .precautions h4 {
+  font-weight: 600;
+  font-size: 2rem;
+  color: #ffaec8;
+}
+
+.wheezes-wrapper .precautions button {
+  background-color: #ffaec8;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.wheezes-wrapper .precautions .recommended-consultations {
+  padding: 1rem;
+}
+
+.wheezes-wrapper .precautions .recommended-consultations .consultations {
+  margin: 0  0.25rem !important;
+}
+
+.wheezes-wrapper .precautions .recommended-consultations .consultations p {
+  font-size: 0.7rem;
+  font-weight: 400;
+}
+
+.wheezes-wrapper .precautions .recommended-consultations .consultations img {
+  height: 5rem;
+  width: 5rem;
+  margin-bottom: 0.5rem;
+}
+
+.wheezes-wrapper .precautions .recommended-consultations .consultations h6 {
+  text-transform: uppercase;
+  margin: 0.5rem 0;
+>>>>>>> d88e78405ef13ab97ba0dd0cd47938adcd3f3d24
 }
 /*# sourceMappingURL=style.css.map */
