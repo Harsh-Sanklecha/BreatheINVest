@@ -13,3 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     )   
 })
+
+$('#startButton').click(function(){
+    $('#startButton').innerHTML = "TEST";
+});
