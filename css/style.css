@@ -123,9 +123,32 @@ body {
           transform: translateX(-50%);
   background: #fff;
   border-radius: 50%;
-  padding: 5rem;
+  padding: 3rem 2rem;
   font-size: 1.5rem;
   text-transform: uppercase;
+  font-family: 'Poppings';
+}
+
+.button-start button h3 {
+  font-weight: 600;
+}
+
+.button-start #stopButton h3 {
+  text-transform: none;
+  -webkit-animation: blinker 2s linear infinite;
+          animation: blinker 2s linear infinite;
+}
+
+@-webkit-keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
 }
 
 .instructions-wrapper {
@@ -215,5 +238,26 @@ body {
 
 .report-wrapper .report .nav-logo {
   padding: 2rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .main-wrapper .main {
+    position: static;
+    -webkit-transform: translateY(10%);
+            transform: translateY(10%);
+  }
+  .main-wrapper .main .bottom-caution {
+    padding: 1rem;
+  }
+  .button-start {
+    height: 10rem;
+  }
+  .instructions-wrapper {
+    margin: 0 1.5rem;
+    padding: 1rem;
+    width: 90%;
+    -webkit-transform: none;
+            transform: none;
+  }
 }
 /*# sourceMappingURL=style.css.map */

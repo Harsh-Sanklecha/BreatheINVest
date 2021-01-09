@@ -51,26 +51,31 @@
 
 
     <div class="button-start">
-        <button class="btn border"id="startButton"><h3>Start</h3></button>
+        <button class="btn border" id="startButton" onclick="starts();">
+            <h3>Start</h3>
+        </button>
+        <button class="btn border" id="stopButton" style="display:none">
+            <h3 style="font-weight: 400;"> Keep <br> Breathing! </h3> <b>00:<span id="time-left">15</span> </b>
+        </button>
         
     </div>
     <div class="instructions-wrapper text-center border">
         <h3>Make Sure <span>!</span></h3>
 
         <div class="instruction-img-wrapper row m-0">
-            <div class="instruction-img col-lg-4">
+            <div class="instruction-img col-4">
                 <div class="instruction">
                     <img src="img/man-vest.png">
                 </div>
             </div>
-            <div class="instruction-img col-lg-4">
+            <div class="instruction-img col-4">
                 <div class="instruction">
                          <div class="timer-bottom border">
                         <h4> 00:<span id="time-left">15</span></h4>
                     </div>
                 </div>
             </div>
-            <div class="instruction-img col-lg-4">
+            <div class="instruction-img col-4">
                 <div class="instruction">
                     <img src="img/side-vest.png" alt="">
                 </div>
@@ -86,6 +91,10 @@
     
  <!-- Bootstrap JS -->
  <script src="js/bootstrap.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.dom.min.js"></script>
+<script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
 
  <!-- Custom JS -->
  <script src="js/main.js"></script>
