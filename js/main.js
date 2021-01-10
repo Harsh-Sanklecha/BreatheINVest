@@ -99,6 +99,7 @@ function stops() {
     max = normal
     if (asthama > max) {
         max = asthama;
+        $(location).attr('href', 'http://127.0.0.1:5500/wheezes.html');
         result = "Wheezes"
     }
     if (covid > max) {
@@ -107,11 +108,11 @@ function stops() {
     }
     if (cw > max) {
         max = cw;
+        $(location).attr('href', 'http://127.0.0.1:5500/crackles.html');
         result = "Crackles"
 
     }
     else{
-        console.log("TEST:NORMAL");
         $(location).attr('href', 'http://127.0.0.1:5500/normal.html');
     }
 

@@ -15,6 +15,7 @@ body{
     height: 100vh;
     background: linear-gradient(var(--pink),#fff,#fff,#fff,#fff);
 }
+
 .navigation-bar{
 
 
@@ -79,12 +80,14 @@ body{
     background: linear-gradient(#a1f69b,#fff,#fff);
     height: 100%;
     padding-top: 1%;
+
     h3{
         margin-top: 2rem;
         font-weight: 800;
         font-size: 3rem;
         font-family: "Poppins";
     }
+
     p{
         font-weight: 600;
         font-family: "Poppins";
@@ -286,8 +289,6 @@ body{
 
 .crackles-wrapper {
     background: (linear-gradient(#f5f69b,#fff,#fff));
-    width: 100%;
-    height: 100%;
     padding-top: 1%;
 
     h4{
@@ -413,12 +414,17 @@ body{
         
     }
 }
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> b1cb6a66de0978291257b33f1ed849e857862de8
 .repnorm-wrapper{
     padding-top: 5%;
     height: 110%;
     width: 50%;
     background: linear-gradient(var(--pink),#fff,#fff,#fff,#fff);
+    
     .repnorm{
         width: 60%;
         background: #fff;
@@ -453,6 +459,7 @@ body{
         }
 
     }
+<<<<<<< HEAD
 
 }
 
@@ -501,12 +508,15 @@ body{
         transform: none;
     }
     
+=======
+>>>>>>> b1cb6a66de0978291257b33f1ed849e857862de8
 }
 
 .repcrack-wrapper{
     padding-top: 5%;
     height: 120%;
     background: linear-gradient(var(--pink),#fff,#fff,#fff,#fff);
+
     .repcrack{
         width: 50%;
         background: #fff;
@@ -561,6 +571,7 @@ body{
     padding-top: 5%;
     height: 100%;
     background: linear-gradient(var(--pink),#fff,#fff,#fff,#fff);
+
     .repwheezes{
         width: 50%;
         background: #fff;
@@ -596,6 +607,7 @@ body{
 
     }
 
+<<<<<<< HEAD
 }
 
 @media only screen and (max-width: 768px){
@@ -630,3 +642,42 @@ body{
         background: #fff;
     }
 }
+=======
+    .normal-wrapper .precautions {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        margin: 5rem 0;
+        padding: 1rem 4rem;
+        width: 80%;
+    }
+    
+}
+
+@media only screen and (max-width: 768px) {
+
+     .main-wrapper .main{
+        position: static;
+        transform: translateY(10%);
+    }
+
+
+    .main-wrapper .main .bottom-caution{
+        padding: 1rem;
+    }
+
+    .button-start{
+        height: 10rem;
+    }
+
+    .instructions-wrapper{
+        margin: 0 1.5rem;
+        padding: 1rem;
+        width: 90%;
+        transform: none;
+    }
+    
+}
+   
+>>>>>>> b1cb6a66de0978291257b33f1ed849e857862de8

@@ -267,6 +267,7 @@ body {
   padding: 2rem;
 }
 
+<<<<<<< HEAD
 @media only screen and (max-width: 768px) {
   .report-wrapper .report {
     width: 80%;
@@ -279,11 +280,11 @@ body {
   }
 }
 
+=======
+>>>>>>> b1cb6a66de0978291257b33f1ed849e857862de8
 .crackles-wrapper {
   background: -webkit-gradient(linear, left top, left bottom, from(#f5f69b), color-stop(#fff), to(#fff));
   background: linear-gradient(#f5f69b, #fff, #fff);
-  width: 100%;
-  height: 100%;
   padding-top: 1%;
 }
 
@@ -413,14 +414,22 @@ body {
 
 .repnorm-wrapper {
   padding-top: 5%;
+<<<<<<< HEAD
   height: 110%;
   width: 50%;
+=======
+  height: 100%;
+>>>>>>> b1cb6a66de0978291257b33f1ed849e857862de8
   background: -webkit-gradient(linear, left top, left bottom, from(var(--pink)), color-stop(#fff), color-stop(#fff), color-stop(#fff), to(#fff));
   background: linear-gradient(var(--pink), #fff, #fff, #fff, #fff);
 }
 
 .repnorm-wrapper .repnorm {
+<<<<<<< HEAD
   width: 60%;
+=======
+  width: 50%;
+>>>>>>> b1cb6a66de0978291257b33f1ed849e857862de8
   background: #fff;
   position: absolute;
   top: 50%;
@@ -428,7 +437,11 @@ body {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   margin: 2rem 0;
+<<<<<<< HEAD
   padding: 1% 4rem;
+=======
+  padding: 1% 2rem;
+>>>>>>> b1cb6a66de0978291257b33f1ed849e857862de8
 }
 
 .repnorm-wrapper .repnorm h5 {
@@ -446,6 +459,7 @@ body {
 }
 
 .repnorm-wrapper .repnorm .nav-logo {
+<<<<<<< HEAD
   padding: 0rem 2rem 0rem 2rem;
 }
 
@@ -474,6 +488,105 @@ body {
 }
 
 @media only screen and (max-width: 768px) {
+=======
+  padding: 2rem;
+}
+
+.repcrack-wrapper {
+  padding-top: 5%;
+  height: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, from(var(--pink)), color-stop(#fff), color-stop(#fff), color-stop(#fff), to(#fff));
+  background: linear-gradient(var(--pink), #fff, #fff, #fff, #fff);
+}
+
+.repcrack-wrapper .repcrack {
+  width: 50%;
+  background: #fff;
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  margin: 2rem 0;
+  padding: 1% 2rem 2rem 2%;
+}
+
+.repcrack-wrapper .repcrack h5 {
+  font-weight: 600;
+  font-size: 2.5rem;
+  color: #ffaec8;
+  text-align: center;
+}
+
+.repcrack-wrapper .repcrack label {
+  text-align: left;
+  font-weight: 600;
+  font-size: 1.2rem;
+  color: #ffaec8;
+}
+
+.repcrack-wrapper .repcrack .prec {
+  padding-left: 4%;
+}
+
+.repcrack-wrapper .repcrack .nav-logo {
+  padding: 2rem;
+}
+
+.repwheezes-wrapper {
+  padding-top: 5%;
+  height: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, from(var(--pink)), color-stop(#fff), color-stop(#fff), color-stop(#fff), to(#fff));
+  background: linear-gradient(var(--pink), #fff, #fff, #fff, #fff);
+}
+
+.repwheezes-wrapper .repwheezes {
+  width: 50%;
+  background: #fff;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  margin: 2rem 0;
+  padding: 1% 2rem;
+}
+
+.repwheezes-wrapper .repwheezes h5 {
+  font-weight: 600;
+  font-size: 2.5rem;
+  color: #ffaec8;
+  text-align: center;
+}
+
+.repwheezes-wrapper .repwheezes label {
+  text-align: left;
+  font-weight: 600;
+  font-size: 1.2rem;
+  color: #ffaec8;
+}
+
+.repwheezes-wrapper .repwheezes .prec {
+  padding-left: 4%;
+}
+
+.repwheezes-wrapper .repwheezes .nav-logo {
+  padding: 2rem;
+}
+
+.repwheezes-wrapper .normal-wrapper .precautions {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  margin: 5rem 0;
+  padding: 1rem 4rem;
+  width: 80%;
+}
+
+@media only screen and (max-width: 768px) {
+>>>>>>> b1cb6a66de0978291257b33f1ed849e857862de8
   .main-wrapper .main {
     position: static;
     -webkit-transform: translateY(10%);
@@ -491,6 +604,7 @@ body {
     width: 90%;
     -webkit-transform: none;
             transform: none;
+<<<<<<< HEAD
   }
 }
 
@@ -610,6 +724,8 @@ body {
   }
   .repwheezes-wrapper .body {
     background: #fff;
+=======
+>>>>>>> b1cb6a66de0978291257b33f1ed849e857862de8
   }
 }
 /*# sourceMappingURL=style.css.map */
