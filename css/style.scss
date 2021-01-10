@@ -97,7 +97,7 @@ body{
         left: 50%;
         transform: translate(-50%,-50%);
         margin: 5rem 0;
-        padding: 1rem 8rem;
+        padding: 1rem 4rem;
 
         h5{
             font-weight: 600;
@@ -114,6 +114,37 @@ body{
         }
     }
 }
+
+@media only screen and (max-width: 768px) {
+    .normal-wrapper{
+        padding-top: 0.5%;
+        padding-bottom: 00.5%;
+    }
+    .normal-wrapper .precautions {
+        position: absolute;
+        top: 65%;
+        font-size: 1rem;
+        left: 50%;
+        // bottom: 1%;
+        transform: translate(-50%, -50%);
+        margin: 5rem 0;
+        padding: 0rem 1rem 0rem 2rem;
+        height: 75%;
+        width: 90%;
+    }
+
+    .normal-wrapper .body{
+        line-height: 1%;
+        padding: 3%;
+    }
+
+    .normal-wrapper .pre{
+        padding-top: 3%;
+        padding-bottom: 2%;
+    }
+
+}
+
 .button-start{
     margin-top: 1.5rem;
     position: relative;
@@ -201,7 +232,7 @@ body{
     background: linear-gradient(var(--pink),#fff,#fff,#fff,#fff);
 
     .report{
-        width: 40%;
+        width: 50%;
         background: #fff;
         position: absolute;
         top: 45%;
@@ -238,6 +269,19 @@ body{
             padding: 2rem;
         }
    }
+}
+
+@media only screen and (max-width: 768px){
+    .report-wrapper .report{
+        width: 80%;
+        padding: 0.5rem 2rem 1rem 2rem;
+        top: 50%;
+        height: 100%;
+    }
+
+    .report-wrapper .body{
+        background: #fff;
+    }
 }
 
 .crackles-wrapper {
@@ -369,40 +413,27 @@ body{
         
     }
 }
-<<<<<<< HEAD
-
-@media only screen and (max-width: 768px) {
-    .normal-wrapper .precautions {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        margin: 5rem 0;
-        padding: 1rem 4rem;
-        width: 80%;
-    }
     
-=======
 .repnorm-wrapper{
     padding-top: 5%;
-    height: 100%;
+    height: 110%;
+    width: 50%;
     background: linear-gradient(var(--pink),#fff,#fff,#fff,#fff);
     .repnorm{
-        width: 50%;
+        width: 60%;
         background: #fff;
         position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%,-50%);
         margin: 2rem 0;
-        padding: 1% 2rem;
+        padding: 1% 4rem;
 
         h5{
             font-weight: 600;
             font-size: 2.5rem;
             color: #ffaec8;
-            text-align: center;
-                
+            text-align: center;                
         } 
             
         label{
@@ -413,14 +444,39 @@ body{
         }  
 
         .nav-logo{
-            padding: 2rem;
+            padding: 0rem 2rem 0rem 2rem;
+        }
+
+        .prec{
+            padding-left: 5%;
+            padding-bottom: 0rem;
         }
 
     }
-<<<<<<< HEAD
+
 }
 
+@media only screen and (max-width: 768px){
+    .repnorm-wrapper .repnorm{
+        width: 90%;
+        padding: 0rem 2rem 0rem 2rem;
+        top: 50%;
+        height: 102%;
+    }
 
+    .repnorm-wrapper .body{
+        background: #fff;
+    }
+
+    .repnorm-wrapper .prec{
+        padding-left: 2rem;
+        padding-bottom: 1rem;
+    }
+
+    .repnorm-wrapper .nav-logo{
+        bottom: 0.5%;
+    }
+}
 
 @media only screen and (max-width: 768px) {
 
@@ -444,13 +500,12 @@ body{
         width: 90%;
         transform: none;
     }
-=======
     
 }
 
 .repcrack-wrapper{
     padding-top: 5%;
-    height: 100%;
+    height: 120%;
     background: linear-gradient(var(--pink),#fff,#fff,#fff,#fff);
     .repcrack{
         width: 50%;
@@ -487,6 +542,19 @@ body{
 
     }
     
+}
+
+@media only screen and (max-width: 768px){
+    .repcrack-wrapper .repcrack{
+        width: 90%;
+        top: 65%;
+        padding: 1rem;
+        height: 132%;
+    }
+
+    .repcrack-wrapper .body{
+        background: #fff;
+    }
 }
 
 .repwheezes-wrapper{
@@ -527,7 +595,38 @@ body{
         }
 
     }
-    
->>>>>>> 2fa1f683cef6a8780c7f30750e369af44cfca84c
->>>>>>> d773b67f24a676441628f1f59288e13146b1180c
+
+}
+
+@media only screen and (max-width: 768px){
+    // .repwheezes-wrapper{
+    //     background: linear-gradient(var(--pink),#fff,#fff,#fff,#fff);
+    // }
+
+    .repwheezes-wrapper .repwheezes{
+        width: 95%;
+        height: 157%;
+        top: 75%;
+        bottom: 1%;
+        padding: 1rem 1rem 1rem 1rem;
+        font-size: 1rem; 
+    }
+
+    .repwheezes-wrapper .h5{
+        bottom: 1%;
+    }
+
+    .repwheezes-wrapper .prec{
+        bottom: 0%;
+    }
+
+    .repwheezes-wrapper .nav-logo{
+        padding-bottom: 4%;
+        top: 0%;
+        font-size: 1%;
+    }
+
+    .repwheezes-wrapper .body{
+        background: #fff;
+    }
 }
