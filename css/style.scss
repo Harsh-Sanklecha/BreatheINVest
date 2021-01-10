@@ -80,12 +80,14 @@ body{
     background: linear-gradient(#a1f69b,#fff,#fff);
     height: 100%;
     padding-top: 1%;
+
     h3{
         margin-top: 2rem;
         font-weight: 800;
         font-size: 3rem;
         font-family: "Poppins";
     }
+
     p{
         font-weight: 600;
         font-family: "Poppins";
@@ -94,7 +96,7 @@ body{
     }
     .precautions{
         position:absolute;
-        top: 55%;
+        top: 60%;
         left: 50%;
         transform: translate(-50%,-50%);
         margin: 5rem 0;
@@ -243,8 +245,6 @@ body{
 
 .crackles-wrapper {
     background: (linear-gradient(#f5f69b,#fff,#fff));
-    width: 100%;
-    height: 100%;
     padding-top: 1%;
 
     h4{
@@ -370,10 +370,12 @@ body{
         
     }
 }
+
 .repnorm-wrapper{
     padding-top: 5%;
     height: 100%;
     background: linear-gradient(var(--pink),#fff,#fff,#fff,#fff);
+    
     .repnorm{
         width: 50%;
         background: #fff;
@@ -406,10 +408,103 @@ body{
     }
 }
 
+.repcrack-wrapper{
+    padding-top: 5%;
+    height: 100%;
+    background: linear-gradient(var(--pink),#fff,#fff,#fff,#fff);
+
+    .repcrack{
+        width: 50%;
+        background: #fff;
+        position: absolute;
+        top: 55%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        margin: 2rem 0;
+        padding: 1% 2rem 2rem 2%;
+
+        h5{
+            font-weight: 600;
+            font-size: 2.5rem;
+            color: #ffaec8;
+            text-align: center;
+                
+        } 
+            
+        label{
+            text-align: left;
+            font-weight: 600;
+            font-size: 1.2rem ;
+            color: #ffaec8;
+        }  
+
+        .prec{
+            padding-left: 4%;
+        }
+
+        .nav-logo{
+            padding: 2rem;
+        }
+
+    }
+    
+}
+
+.repwheezes-wrapper{
+    padding-top: 5%;
+    height: 100%;
+    background: linear-gradient(var(--pink),#fff,#fff,#fff,#fff);
+
+    .repwheezes{
+        width: 50%;
+        background: #fff;
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        margin: 2rem 0;
+        padding: 1% 2rem;
+
+        h5{
+            font-weight: 600;
+            font-size: 2.5rem;
+            color: #ffaec8;
+            text-align: center;
+                
+        } 
+            
+        label{
+            text-align: left;
+            font-weight: 600;
+            font-size: 1.2rem ;
+            color: #ffaec8;
+        }  
+
+        .prec{
+            padding-left: 4%;
+        }
+
+        .nav-logo{
+            padding: 2rem;
+        }
+
+    }
+
+    .normal-wrapper .precautions {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        margin: 5rem 0;
+        padding: 1rem 4rem;
+        width: 80%;
+    }
+    
+}
 
 @media only screen and (max-width: 768px) {
 
-    .main-wrapper .main{
+     .main-wrapper .main{
         position: static;
         transform: translateY(10%);
     }
@@ -429,4 +524,6 @@ body{
         width: 90%;
         transform: none;
     }
+    
 }
+   
