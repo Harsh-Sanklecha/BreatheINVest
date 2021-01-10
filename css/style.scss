@@ -15,6 +15,7 @@ body{
     height: 100vh;
     background: linear-gradient(var(--pink),#fff,#fff,#fff,#fff);
 }
+
 .navigation-bar{
 
 
@@ -403,9 +404,7 @@ body{
         }
 
     }
-<<<<<<< HEAD
 }
-
 
 
 @media only screen and (max-width: 768px) {
@@ -430,89 +429,4 @@ body{
         width: 90%;
         transform: none;
     }
-=======
-    
-}
-
-.repcrack-wrapper{
-    padding-top: 5%;
-    height: 100%;
-    background: linear-gradient(var(--pink),#fff,#fff,#fff,#fff);
-    .repcrack{
-        width: 50%;
-        background: #fff;
-        position: absolute;
-        top: 55%;
-        left: 50%;
-        transform: translate(-50%,-50%);
-        margin: 2rem 0;
-        padding: 1% 2rem 2rem 2%;
-
-        h5{
-            font-weight: 600;
-            font-size: 2.5rem;
-            color: #ffaec8;
-            text-align: center;
-                
-        } 
-            
-        label{
-            text-align: left;
-            font-weight: 600;
-            font-size: 1.2rem ;
-            color: #ffaec8;
-        }  
-
-        .prec{
-            padding-left: 4%;
-        }
-
-        .nav-logo{
-            padding: 2rem;
-        }
-
-    }
-    
-}
-
-.repwheezes-wrapper{
-    padding-top: 5%;
-    height: 100%;
-    background: linear-gradient(var(--pink),#fff,#fff,#fff,#fff);
-    .repwheezes{
-        width: 50%;
-        background: #fff;
-        position: absolute;
-        top: 60%;
-        left: 50%;
-        transform: translate(-50%,-50%);
-        margin: 2rem 0;
-        padding: 1% 2rem;
-
-        h5{
-            font-weight: 600;
-            font-size: 2.5rem;
-            color: #ffaec8;
-            text-align: center;
-                
-        } 
-            
-        label{
-            text-align: left;
-            font-weight: 600;
-            font-size: 1.2rem ;
-            color: #ffaec8;
-        }  
-
-        .prec{
-            padding-left: 4%;
-        }
-
-        .nav-logo{
-            padding: 2rem;
-        }
-
-    }
-    
->>>>>>> 2fa1f683cef6a8780c7f30750e369af44cfca84c
 }
