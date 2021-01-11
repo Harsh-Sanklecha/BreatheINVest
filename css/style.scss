@@ -8,12 +8,13 @@ html{
 }
 :root{
     --pink: #ffe6e6;    
+    --darkPink: #f092b0;
     --grey: #636162;
 }
 
 body{
     height: 100vh;
-    background: linear-gradient(var(--pink),#fff,#fff,#fff,#fff);
+    background: linear-gradient(var(--pink),#fff,#fff);
 }
 
 .navigation-bar{
@@ -96,13 +97,13 @@ body{
     }
     .precautions{
         position:absolute;
-        top: 60%;
+        top: 70%;
         left: 50%;
         transform: translate(-50%,-50%);
-        margin: 5rem 0;
-        padding: 1rem 8rem;
+        padding: 1rem 4rem;
 
         h5{
+            margin: 1rem 0;
             font-weight: 600;
             font-size: 2.5rem;
             color: #ffaec8;
@@ -128,8 +129,9 @@ body{
         left: 50%;
         transform: translateX(-50%);
         background: #fff;
+        padding: 40px;
+        display: inline-block;
         border-radius: 50%;
-        padding:3rem 2rem;
         font-size: 1.5rem;
         text-transform: uppercase;
         font-family: 'Poppings';
@@ -237,6 +239,7 @@ body{
             top: 50%;
             bottom: 50%;
         }
+
         .nav-logo{
             padding: 2rem;
         }
@@ -253,15 +256,20 @@ body{
         font-size: 1rem;
         font-family: "Poppins";
     }
+
     p{
         font-weight: 600;
         font-family: "Poppins";
         font-size: 1rem;
-
     }
+    
     .precautions{
-        background: #fff;
         padding: 1rem 4rem;
+
+        .precautions-inner{
+            background: #fff;
+        }
+
         ul{
             padding: 0 2rem;
         }
@@ -272,18 +280,23 @@ body{
             color: #ffaec8;
             
         }
+
         button{
             background-color: #ffaec8;
             padding: 0.5rem;
             margin-bottom: 1rem;
+
+            &:hover{
+                background: var(--darkPink);
+            }
         }
 
         .recommended-consultations{
             padding: 1rem;
 
-            
             .consultations{
                 margin: 0  0.25rem !important;
+
                 p{
                     font-size: 0.7rem;
                     font-weight: 400;
@@ -296,15 +309,13 @@ body{
                 }
 
                 h6{
-                text-transform: uppercase;
-                margin: 0.5rem 0;
+                    text-transform: uppercase;
+                    margin: 0.5rem 0;
                 }
             }
         }
         
     }
-    
-
 }
 
 .wheezes-wrapper{
@@ -489,17 +500,6 @@ body{
         }
 
     }
-
-    .normal-wrapper .precautions {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        margin: 5rem 0;
-        padding: 1rem 4rem;
-        width: 80%;
-    }
-    
 }
 
 @media only screen and (max-width: 768px) {
@@ -524,6 +524,19 @@ body{
         width: 90%;
         transform: none;
     }
+
+    .normal-wrapper .precautions {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        margin: 5rem 0;
+        width: 80%;
+    }
     
+}
+
+@media only screen and (max-width: 425px) {
+
 }
    

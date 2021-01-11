@@ -9,13 +9,14 @@ html {
 
 :root {
   --pink: #ffe6e6;
+  --darkPink: #f092b0;
   --grey: #636162;
 }
 
 body {
   height: 100vh;
-  background: -webkit-gradient(linear, left top, left bottom, from(var(--pink)), color-stop(#fff), color-stop(#fff), color-stop(#fff), to(#fff));
-  background: linear-gradient(var(--pink), #fff, #fff, #fff, #fff);
+  background: -webkit-gradient(linear, left top, left bottom, from(var(--pink)), color-stop(#fff), to(#fff));
+  background: linear-gradient(var(--pink), #fff, #fff);
 }
 
 .navigation-bar .navbar {
@@ -89,15 +90,15 @@ body {
 
 .normal-wrapper .precautions {
   position: absolute;
-  top: 60%;
+  top: 70%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  margin: 5rem 0;
-  padding: 1rem 8rem;
+  padding: 1rem 4rem;
 }
 
 .normal-wrapper .precautions h5 {
+  margin: 1rem 0;
   font-weight: 600;
   font-size: 2.5rem;
   color: #ffaec8;
@@ -122,8 +123,9 @@ body {
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   background: #fff;
+  padding: 40px;
+  display: inline-block;
   border-radius: 50%;
-  padding: 3rem 2rem;
   font-size: 1.5rem;
   text-transform: uppercase;
   font-family: 'Poppings';
@@ -260,8 +262,11 @@ body {
 }
 
 .crackles-wrapper .precautions {
-  background: #fff;
   padding: 1rem 4rem;
+}
+
+.crackles-wrapper .precautions .precautions-inner {
+  background: #fff;
 }
 
 .crackles-wrapper .precautions ul {
@@ -278,6 +283,10 @@ body {
   background-color: #ffaec8;
   padding: 0.5rem;
   margin-bottom: 1rem;
+}
+
+.crackles-wrapper .precautions button:hover {
+  background: var(--darkPink);
 }
 
 .crackles-wrapper .precautions .recommended-consultations {
@@ -489,17 +498,6 @@ body {
   padding: 2rem;
 }
 
-.repwheezes-wrapper .normal-wrapper .precautions {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  margin: 5rem 0;
-  padding: 1rem 4rem;
-  width: 80%;
-}
-
 @media only screen and (max-width: 768px) {
   .main-wrapper .main {
     position: static;
@@ -518,6 +516,15 @@ body {
     width: 90%;
     -webkit-transform: none;
             transform: none;
+  }
+  .normal-wrapper .precautions {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    margin: 5rem 0;
+    width: 80%;
   }
 }
 /*# sourceMappingURL=style.css.map */
