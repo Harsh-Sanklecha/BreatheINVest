@@ -119,42 +119,6 @@ body{
     }
 }
 
-@media only screen and (max-width: 768px) {
-    .normal-wrapper{
-        padding-top: 0.5%;
-        padding-bottom: 0.5%;
-    }
-    .normal-wrapper .precautions {
-        position: absolute;
-        top: 65%;
-
-        font-size: 1rem;
-        left: 50%;
-        // bottom: 1%;
-        transform: translate(-50%, -50%);
-        margin: 6rem 0;
-        padding: 0rem 1rem 0rem 2rem;
-        // height: 75%;
-        width: 90%;
-        
-        button{
-            margin-bottom: 1rem;
-        }
-    }
-
-    .normal-wrapper .body{
-        line-height: 1%;
-        padding: 3%;
-    }
-
-
-    .normal-wrapper .pre{
-        padding-top: 1%;
-        padding-bottom: 1%;
-    }
-
-}
-
 .button-start{
     margin-top: 1.5rem;
     position: relative;
@@ -431,10 +395,6 @@ body{
         bottom: 0.5%;
     }
 
-<<<<<<< HEAD
-
-=======
->>>>>>> 5a35e700c4a1e94b1b7b16f9103d1491a3b290f2
     .main-wrapper .main{
         position: static;
         transform: translateY(10%);
@@ -604,6 +564,40 @@ body{
         margin: 5rem 0;
         width: 80%;
     }
+    
+    .normal-wrapper{
+        padding-top: 0.5%;
+        padding-bottom: 0.5%;
+    }
+    .normal-wrapper .precautions {
+        position: absolute;
+        top: 65%;
+
+        font-size: 1rem;
+        left: 50%;
+        // bottom: 1%;
+        transform: translate(-50%, -50%);
+        margin: 6rem 0;
+        padding: 0rem 1rem 0rem 2rem;
+        // height: 75%;
+        width: 90%;
+        
+        button{
+            margin-bottom: 1rem;
+        }
+    }
+
+    .normal-wrapper .body{
+        line-height: 1%;
+        padding: 3%;
+    }
+
+
+    .normal-wrapper .pre{
+        padding-top: 1%;
+        padding-bottom: 1%;
+    }
+
     
 }
 
