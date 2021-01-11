@@ -99,7 +99,7 @@ function stops() {
     max = normal
     if (asthama > max) {
         max = asthama;
-        $(location).attr('href', 'http://127.0.0.1:5500/wheezes.html');
+        $(location).attr('href', 'wheezes.html');
         result = "Wheezes"
     }
     if (covid > max) {
@@ -108,12 +108,12 @@ function stops() {
     }
     if (cw > max) {
         max = cw;
-        $(location).attr('href', 'http://127.0.0.1:5500/crackles.html');
+        $(location).attr('href', 'crackles.html');
         result = "Crackles"
 
     }
     else{
-        $(location).attr('href', 'http://127.0.0.1:5500/normal.html');
+        $(location).attr('href', 'normal.html');
     }
 
     // document.getElementById("result").innerHTML = "Result:" + result;
