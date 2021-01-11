@@ -78,13 +78,8 @@ body{
 }
 
 .normal-wrapper{
-<<<<<<< HEAD
     background: linear-gradient(#a1f69b,#fff,#fff);
     height: 80vh;
-=======
-    background: linear-gradient(#a1f69b,#fff);
-    height: 100%;
->>>>>>> e965b289d84bda42bf930030929e40bcee825504
     padding: 1%;
 
     .modal .body{
@@ -128,7 +123,6 @@ body{
     }
 }
 
-<<<<<<< HEAD
 @media only screen and (max-width: 768px) {
     .normal-wrapper{
         padding-top: 0.5%;
@@ -165,13 +159,6 @@ body{
 
 }
 
-=======
-<<<<<<< HEAD
-
-
-=======
->>>>>>> ee91e9627370527f9ea13fea055a6805649ee896
->>>>>>> e965b289d84bda42bf930030929e40bcee825504
 .button-start{
     margin-top: 1.5rem;
     position: relative;
@@ -555,7 +542,6 @@ body{
 }
 
 .repwheezes-wrapper{
-    // padding-top: 5%;
     height: 100%;
     background: linear-gradient(var(--pink),#fff,#fff,#fff,#fff);
 
@@ -593,7 +579,7 @@ body{
         }
 
     }
-}
+
     .repwheezes-wrapper .repwheezes{
         width: 95%;
         height: 157%;
@@ -650,12 +636,6 @@ body{
         margin: 5rem 0;
         width: 80%;
     }
-<<<<<<< HEAD
-
-=======
-    
-<<<<<<< HEAD
-=======
     .normal-wrapper{
         padding-top: 0.5%;
         padding-bottom: 0.5%;
@@ -689,11 +669,7 @@ body{
         padding-bottom: 1%;
     }
 
-    
->>>>>>> ee91e9627370527f9ea13fea055a6805649ee896
->>>>>>> e965b289d84bda42bf930030929e40bcee825504
 }
-
 @media only screen and (max-width: 425px) {
  
     .normal-wrapper .precautions {
