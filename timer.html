@@ -15,10 +15,6 @@
     
     <!-- Font awesome -->
     <link rel="stylesheet" href="css/all.min.css">
-
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css">
@@ -52,37 +48,70 @@
 
     <div class="button-start">
         <button class="btn border" id="startButton" onclick="starts();">
-            <h3>Start</h3>
+            Start
         </button>
         <button class="btn border" id="stopButton" style="display:none">
-            <h3 style="font-weight: 400;"> Keep <br> Breathing! </h3> <b>00:<span id="time-left">15</span> </b>
+            <h3 style="font-weight: 100;"> Keep <br> Breathing! </h3> <b>00:<span id="time-left">15</span> </b>
         </button>
         
     </div>
     <div class="instructions-wrapper text-center border">
-        <h3>Make Sure <span>!</span></h3>
+        <h3>Make sure <span>!</span></h3>
 
         <div class="instruction-img-wrapper row m-0">
             <div class="instruction-img col-4">
                 <div class="instruction">
                     <img src="img/man-vest.png">
+                    <p class="mt-2">Placement</p>
                 </div>
             </div>
             <div class="instruction-img col-4">
                 <div class="instruction">
-                         <div class="timer-bottom border">
-                        <h4> 00:<span id="time-left">15</span><br>Deep breathe for 15 sec</h4>
+                    <div class="timer-bottom-wrapper">
+                        <div class="timer-bottom border">
+                            <h4> 00:<span id="time-left">15</span></h4>
+                        </div>
+                        <p class="mt-4">Deep Breathe for 15 sec</p>
                     </div>
                 </div>
             </div>
             <div class="instruction-img col-4">
                 <div class="instruction">
                     <img src="img/side-vest.png" alt="">
+                    <p class="mt-2">Fit</p>
+                </div>
+            </div>
+        </div>
+        <div class="instruction-img-wrapper-mobile row m-0">
+            <div class="instruction-img col-12">
+                <div class="instruction">
+                    <div class="timer-bottom-wrapper d-flex justify-content-center">
+                        <div class="timer-bottom border">
+                            <h4> 00:15 </h4>
+                        </div>
+                    </div>
+                    <p class="mt-2">Deep Breathe for 15 sec</p>
+                </div>
+            </div>
+            <div class="instruction-img col-6">
+                <div class="instruction">
+                    <img src="img/man-vest.png">
+                    <p class="mt-2">Placement</p>
+                </div>
+            </div>
+            <div class="instruction-img col-6">
+                <div class="instruction">
+                    <img src="img/side-vest.png" alt="">
+                    <p class="mt-2">Fit</p>
                 </div>
             </div>
         </div>
     </div>
-    
+    <div class="bottom-caution d-flex align-items-center text-left">
+        <i class="fas fa-exclamation-triangle"></i>
+        <p class="mb-1"> Before using this product carefuly read the mannual, Do not take any medical decision without consulting a doctor.</p>
+    </div>
+
 
     <!-- Main Code End -->
 

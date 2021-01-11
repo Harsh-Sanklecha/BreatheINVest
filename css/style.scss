@@ -1,11 +1,11 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
 *{
     margin: 0;
     padding: 0;
 }
-html{
-    font-family: 'Poppins', sans-serif;
-}
+
 :root{
     --pink: #ffe6e6;    
     --darkPink: #f092b0;
@@ -15,18 +15,22 @@ html{
 body{
     min-height: 100vh;
     background: linear-gradient(var(--pink),#fff,#fff);
-    .modal{
-        .modal-header{ 
-             .modal-title {
-                text-align: center;
-            }
+}
+
+.modal{
+
+    .modal-header{ 
+
+            .modal-title {
+            text-align: center;
         }
-        .modal-content{
-            background-color:#ffe6e6;
-            margin: 5rem; 
-            padding: 2rem;
-            width: 80%;
-        }
+    }
+     
+    .modal-content{
+        background-color:#ffe6e6;
+        margin: 5rem; 
+        padding: 2rem;
+        width: 80%;
     }
 }
 
@@ -35,6 +39,7 @@ body{
 
     .navbar{
         background: transparent;
+        border-bottom: 1px solid #D1D1D1;
 
         .navbar-brand{
 
@@ -87,11 +92,23 @@ body{
             color: red;
         }
     }
+}
 
+.bottom-caution{
+    width: 50%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+
+    i{
+        font-size: 1.5rem;
+        padding: 0 1rem;
+        color: red;
+    }
 }
 
 .normal-wrapper{
-    background: linear-gradient(#a1f69b,#fff,#fff);
+    background: linear-gradient(#a1f69b,#fff);
     height: 80vh;
     padding: 1%;
 
@@ -100,6 +117,7 @@ body{
     } 
 
     h3{
+        color: var(--grey);
         margin-top: 2rem;
         font-weight: 800;
         font-size: 3rem;
@@ -107,6 +125,7 @@ body{
     }
 
     p{
+        color: var(--grey);
         font-weight: 600;
         font-family: "Poppins";
         font-size: 1rem;
@@ -129,59 +148,19 @@ body{
 
         button{
             background-color: #ffaec8;
-            padding: 0.5rem;
+            padding: 0.5rem 2rem;
             top: 50%;
             bottom: 50%;
+
+            &:hover{
+                background-color: var(--darkPink);
+            }
         }
     }
 }
 
-@media only screen and (max-width: 768px) {
-    .normal-wrapper{
-        padding-top: 0.5%;
-        padding-bottom: 0.5%;
-    }
-    .normal-wrapper .precautions {
-        position: absolute;
-        top: 65%;
-
-        font-size: 1rem;
-        left: 50%;
-        // bottom: 1%;
-        transform: translate(-50%, -50%);
-        margin: 6rem 0;
-        padding: 0rem 1rem 0rem 2rem;
-        // height: 75%;
-        width: 90%;
-        
-        button{
-            margin-bottom: 1rem;
-        }
-    }
-
-    .normal-wrapper .body{
-        line-height: 1%;
-        padding: 3%;
-    }
-
-
-    .normal-wrapper .pre{
-        padding-top: 1%;
-        padding-bottom: 1%;
-    }
-
-}
-
-<<<<<<< HEAD
-=======
-// =======
-
-
-// >>>>>>> e965b289d84bda42bf930030929e40bcee825504
-// >>>>>>> a1b0996538f889419a3fdc9100dfd0dff5be33a1
->>>>>>> 454217cd191c4df278eef0fb997024dbe17d08dc
 .button-start{
-    margin-top: 1.5rem;
+    margin-top: 1rem;
     position: relative;
     height: 13rem;
     
@@ -191,25 +170,26 @@ body{
         left: 50%;
         transform: translateX(-50%);
         background: #fff;
-        padding: 50px 40px;
+        padding: 75px 65px;
         display: inline-block;
         border-radius: 50%;
-        font-size: 1.5rem;
+        font-size: 2rem;
         text-transform: uppercase;
-        font-family: 'Poppings';
-
-        h3{
-            font-weight: 600;
-        }
+        font-family: 'Poppins';
+        font-weight: 600;
+        color: var(--grey);
     }
 
     #stopButton{
+        color: var(--grey);
         padding: 40px;
+        font-weight: 800;
 
         h3{
             text-transform: none;
             animation: blinker 2s linear infinite;
         }
+
         @keyframes blinker {
         50% {
                 opacity: 0;
@@ -231,6 +211,7 @@ body{
 
     h3{
         font-family: 'Poppins';
+        color: #FFAEC8;
         font-weight: 600;
         font-size: 2rem;
 
@@ -244,21 +225,55 @@ body{
         overflow: hidden;
 
         .instruction{
-
+            padding: 1rem 0;
 
             img{
                 height: 8rem;
                 width: 8rem;
             }
 
-            .timer-bottom{
-                // position: absolute;
-                top: 50%;
+            .timer-bottom-wrapper{
+                position: absolute;
                 left: 50%;
-                // transform: translate(-50%,-50%);
-                padding: 1rem 0;
-                width: 10rem;
-                border-radius: 50%;
+                transform: translateX(-50%);
+                
+                .timer-bottom{
+                    padding: 2rem;
+                    width: 8rem;
+                    border-radius: 50%
+                }
+
+            }
+            p{
+                color: #7E797C;
+            }
+        }
+    }
+    .instruction-img-wrapper-mobile{
+        width: 100%;
+        overflow: hidden;
+        display: none;
+
+        .instruction{
+            padding: 1rem 0;
+
+            img{
+                height: 8rem;
+                width: 8rem;
+            }
+
+            .timer-bottom-wrapper{
+                position: static;
+                
+                .timer-bottom{
+                    padding: 2rem;
+                    width: 8rem;
+                    border-radius: 50%
+                }
+
+            }
+            p{
+                color: #7E797C;
             }
         }
     }
@@ -309,30 +324,25 @@ body{
         }
    }
 
-    // .report-wrapper .report{
-    //     width: 80%;
-    //     padding: 0.5rem 2rem 1rem 2rem;
-    //     top: 50%;
-    //     height: 100%;
-    // }
-
     .report-wrapper .body{
         background: #fff;
     }
 }
 
 .crackles-wrapper {
-    background: (linear-gradient(#f5f69b,#fff,#fff));
+    background: (linear-gradient(#f5f69b,#fff));
     padding-top: 1%;
 
-    h4{
+    h2{
+        color: var(--grey);
         margin-top: 2rem;
         font-weight: 800;
-        font-size: 1rem;
         font-family: "Poppins";
+        text-transform: uppercase;
     }
-
+    
     p{
+        color: var(--grey);
         font-weight: 600;
         font-family: "Poppins";
         font-size: 1rem;
@@ -343,17 +353,20 @@ body{
     }
 
     .precautions{
-        padding: 1rem 4rem;
+        padding: 1rem 2rem;
 
         .precautions-inner{
+            padding: 1rem;
             background: #fff;
         }
 
         ul{
             padding: 0 2rem;
+            margin: 2rem 0;
         }
 
         h4{
+            margin-top: 1rem;
             font-weight: 600;
             font-size: 2rem;
             color: #ffaec8;
@@ -362,7 +375,7 @@ body{
 
         button{
             background-color: #ffaec8;
-            padding: 0.5rem;
+            padding: 0.5rem 2rem;
             margin-bottom: 1rem;
 
             &:hover{
@@ -374,6 +387,8 @@ body{
             padding: 1rem;
 
             .consultations{
+                padding: 1rem 0;
+                font-family: 'Poppins';
                 margin: 0  0.25rem !important;
 
                 p{
@@ -388,6 +403,7 @@ body{
                 }
 
                 h6{
+                    font-weight: 600;
                     text-transform: uppercase;
                     margin: 0.5rem 0;
                 }
@@ -441,36 +457,7 @@ body{
 
 }
 
-@media only screen and (max-width: 768px){
-
-        .normal-wrapper .precautions {
-            position: absolute;
-            top: 65%;
-    
-            font-size: 1rem;
-            left: 50%;
-            // bottom: 1%;
-            transform: translate(-50%, -50%);
-            margin: 4rem 0;
-            padding: 0rem 1rem 0rem 2rem;
-            // height: 75%;
-            width: 90%;
-            
-            button{
-                margin-bottom: 1rem;
-            }
-        }
-    
-        .normal-wrapper .body{
-            line-height: 1%;
-            padding: 3%;
-        }
-    
-    
-        .normal-wrapper .pre{
-            padding-top: 1%;
-            padding-bottom: 1%;
-        }
+@media only screen and (max-width: 975px){
 
     .repnorm-wrapper .repnorm{
         width: 90%;
@@ -502,18 +489,16 @@ body{
         padding: 1rem;
     }
 
-    .button-start{
-        height: 10rem;
+    .bottom-caution{
+        width: 80%;
     }
 
     .instructions-wrapper{
-        margin: 0 1.5rem;
+        margin: 1.5rem;
+        transform: none;
         padding: 1rem;
         width: 90%;
-        transform: none;
     }
-}
-    
 
 .repcrack-wrapper{
     padding-top: 1%;
@@ -522,10 +507,8 @@ body{
     .repcrack{
         width: 80%;
         background: #fff;
-        // position: absolute;
         top: 70%;
         left: 50%;
-        // transform: translate(-50%,-50%);
         margin: 2rem 3rem;
         padding: 2rem;
 
@@ -562,13 +545,6 @@ body{
 
     }
     
-    // .repcrack-wrapper .repcrack{
-    //     width: 90%;
-    //     top: 65%;
-    //     padding: 1rem;
-    //     height: 132%;
-    // }
-
     .repcrack-wrapper .body{
         background: #fff;
     }
@@ -576,21 +552,14 @@ body{
 }
 
 .repwheezes-wrapper{
-<<<<<<< HEAD
     height: 100%;
-=======
-    padding-top: 1%;
-    // height: 100%;
->>>>>>> 454217cd191c4df278eef0fb997024dbe17d08dc
     background: linear-gradient(var(--pink),#fff,#fff,#fff,#fff);
 
     .repwheezes{
         width: 80%;
         background: #fff;
-        // position: absolute;
         top: 70%;
         left: 50%;
-        // transform: translate(-50%,-50%);
         margin: 2rem 3rem;
         padding: 2rem;
 
@@ -617,7 +586,6 @@ body{
             padding: 2rem;
         }
 
-<<<<<<< HEAD
     }
 
     .repwheezes-wrapper .repwheezes{
@@ -628,40 +596,8 @@ body{
         padding: 1rem 1rem 1rem 1rem;
         font-size: 1rem; 
     }
-=======
-        button{
-            background-color: #ffaec8;
-            padding: 0.5rem;
-            top: 50%;
-            bottom: 50%;
-            margin-left: 3.5rem;
-        }
->>>>>>> 454217cd191c4df278eef0fb997024dbe17d08dc
 
     }
-    // .repwheezes-wrapper .repwheezes{
-    //     width: 95%;
-    //     // height: 157%;
-    //     top: 75%;
-    //     bottom: 1%;
-    //     padding: 1rem 1rem 1rem 1rem;
-    //     font-size: 1rem; 
-    // }
-
-    // .repwheezes-wrapper .h5{
-    //     bottom: 1%;
-    // }
-
-    // .repwheezes-wrapper .prec{
-    //     bottom: 0%;
-    // }
-
-    // .repwheezes-wrapper .nav-logo{
-    //     padding-bottom: 4%;
-    //     top: 0%;
-    //     font-size: 1%;
-    // }
-
     .repwheezes-wrapper .body{
         background: #fff;
     }
@@ -676,36 +612,6 @@ body{
         padding: 1rem;
     }
 
-    .button-start{
-        height: 10rem;
-    }
-
-    .instructions-wrapper{
-        margin: 0 1.5rem;
-        padding: 1rem;
-        width: 90%;
-        transform: none;
-    }
-
-    .normal-wrapper .precautions {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        margin: 5rem 0;
-        width: 80%;
-    }
-<<<<<<< HEAD
-=======
-// <<<<<<< HEAD
-// =======
-// <<<<<<< HEAD
-
-// =======
-    
-// <<<<<<< HEAD
-// =======
->>>>>>> 454217cd191c4df278eef0fb997024dbe17d08dc
     .normal-wrapper{
         padding-top: 0.5%;
         padding-bottom: 0.5%;
@@ -713,14 +619,11 @@ body{
     .normal-wrapper .precautions {
         position: absolute;
         top: 65%;
-
         font-size: 1rem;
         left: 50%;
-        // bottom: 1%;
         transform: translate(-50%, -50%);
         margin: 6rem 0;
         padding: 0rem 1rem 0rem 2rem;
-        // height: 75%;
         width: 90%;
         
         button{
@@ -739,38 +642,30 @@ body{
         padding-bottom: 1%;
     }
 
-<<<<<<< HEAD
 }
+
+@media only screen and (max-width: 500px) {
+
+    .instructions-wrapper .instruction-img-wrapper{
+        display: none;
+    }
+
+    .instructions-wrapper .instruction-img-wrapper-mobile{
+        display: flex;
+    }
+
+    .normal-wrapper{
+        height: 100vh;
+        
+        .precautions{
+            top: 70%;
+        } 
+    }
+
+}
+
 @media only screen and (max-width: 425px) {
  
-    .normal-wrapper .precautions {
-        position: absolute;
-        top: 70%;
-
-        font-size: 1rem;
-        left: 50%;
-        // bottom: 1%;
-        transform: translate(-50%, -50%);
-        margin: 5rem 0;
-        padding: 0rem 1rem 0rem 2rem;
-        // height: 78%;
-        width: 90%;
-        
-        button{
-            margin-bottom: 1rem;
-        }
-    }
-
-    .normal-wrapper .body{
-        line-height: 1%;
-        padding: 3%;
-    }
-
-
-    .normal-wrapper .pre{
-        padding-top: 1%;
-        padding-bottom: 1%;
-    }
 
     .repcrack-wrapper .repcrack{
         width: 90%;
@@ -781,46 +676,25 @@ body{
         top: 85%;
     }
 
+    .normal-wrapper{
+        height: 120vh;
+    }
+
+    .bottom-caution{
+        margin: 1rem 0;
+        padding: 0.5rem;
+        width: 100%;
+    }
+
 }
    
-=======
-    
-// >>>>>>> ee91e9627370527f9ea13fea055a6805649ee896
-// >>>>>>> e965b289d84bda42bf930030929e40bcee825504
-// >>>>>>> a1b0996538f889419a3fdc9100dfd0dff5be33a1
-// 
-}
-
->>>>>>> 454217cd191c4df278eef0fb997024dbe17d08dc
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 395px) {
     .instructions-wrapper{
         margin: 0 1rem;
-        padding: 0.5rem;
-        width: 90%;
-        transform: none;
-        h3{
-            font-size: 1rem;
-        }
     }
-     .instructions-img-wrapper{
-         .instruction{
-             margin-left: 1rem;
-             width: 3.5rem;
-             height: 8rem;
-             padding: 0.5rem;
-             
-             .timer-bottom{
-                 position: relative;
-                 align-self: center;
-                 margin: 0.5rem;
-                 h4{
-                     text-align: center;
-                     font-size: 0.5rem;
-                     font-weight: 400;
-                 }
-                
-             }
-         }
-     }
     
-    }   
+    .normal-wrapper .precautions{
+        top: 80%;
+    }
+
+}   

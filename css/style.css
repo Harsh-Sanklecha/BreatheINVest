@@ -1,10 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
 * {
   margin: 0;
   padding: 0;
-}
-
-html {
-  font-family: 'Poppins', sans-serif;
 }
 
 :root {
@@ -19,11 +16,11 @@ body {
   background: linear-gradient(var(--pink), #fff, #fff);
 }
 
-body .modal .modal-header .modal-title {
+.modal .modal-header .modal-title {
   text-align: center;
 }
 
-body .modal .modal-content {
+.modal .modal-content {
   background-color: #ffe6e6;
   margin: 5rem;
   padding: 2rem;
@@ -32,6 +29,7 @@ body .modal .modal-content {
 
 .navigation-bar .navbar {
   background: transparent;
+  border-bottom: 1px solid #D1D1D1;
 }
 
 .navigation-bar .navbar .navbar-brand img {
@@ -79,9 +77,23 @@ body .modal .modal-content {
   color: red;
 }
 
+.bottom-caution {
+  width: 50%;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.bottom-caution i {
+  font-size: 1.5rem;
+  padding: 0 1rem;
+  color: red;
+}
+
 .normal-wrapper {
-  background: -webkit-gradient(linear, left top, left bottom, from(#a1f69b), color-stop(#fff), to(#fff));
-  background: linear-gradient(#a1f69b, #fff, #fff);
+  background: -webkit-gradient(linear, left top, left bottom, from(#a1f69b), to(#fff));
+  background: linear-gradient(#a1f69b, #fff);
   height: 80vh;
   padding: 1%;
 }
@@ -91,6 +103,7 @@ body .modal .modal-content {
 }
 
 .normal-wrapper h3 {
+  color: var(--grey);
   margin-top: 2rem;
   font-weight: 800;
   font-size: 3rem;
@@ -98,6 +111,7 @@ body .modal .modal-content {
 }
 
 .normal-wrapper p {
+  color: var(--grey);
   font-weight: 600;
   font-family: "Poppins";
   font-size: 1rem;
@@ -121,42 +135,17 @@ body .modal .modal-content {
 
 .normal-wrapper .precautions button {
   background-color: #ffaec8;
-  padding: 0.5rem;
+  padding: 0.5rem 2rem;
   top: 50%;
   bottom: 50%;
 }
 
-@media only screen and (max-width: 768px) {
-  .normal-wrapper {
-    padding-top: 0.5%;
-    padding-bottom: 0.5%;
-  }
-  .normal-wrapper .precautions {
-    position: absolute;
-    top: 65%;
-    font-size: 1rem;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
-    margin: 6rem 0;
-    padding: 0rem 1rem 0rem 2rem;
-    width: 90%;
-  }
-  .normal-wrapper .precautions button {
-    margin-bottom: 1rem;
-  }
-  .normal-wrapper .body {
-    line-height: 1%;
-    padding: 3%;
-  }
-  .normal-wrapper .pre {
-    padding-top: 1%;
-    padding-bottom: 1%;
-  }
+.normal-wrapper .precautions button:hover {
+  background-color: var(--darkPink);
 }
 
 .button-start {
-  margin-top: 1.5rem;
+  margin-top: 1rem;
   position: relative;
   height: 13rem;
 }
@@ -167,20 +156,20 @@ body .modal .modal-content {
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   background: #fff;
-  padding: 50px 40px;
+  padding: 75px 65px;
   display: inline-block;
   border-radius: 50%;
-  font-size: 1.5rem;
+  font-size: 2rem;
   text-transform: uppercase;
-  font-family: 'Poppings';
-}
-
-.button-start button h3 {
+  font-family: 'Poppins';
   font-weight: 600;
+  color: var(--grey);
 }
 
 .button-start #stopButton {
+  color: var(--grey);
   padding: 40px;
+  font-weight: 800;
 }
 
 .button-start #stopButton h3 {
@@ -214,6 +203,7 @@ body .modal .modal-content {
 
 .instructions-wrapper h3 {
   font-family: 'Poppins';
+  color: #FFAEC8;
   font-weight: 600;
   font-size: 2rem;
 }
@@ -227,17 +217,59 @@ body .modal .modal-content {
   overflow: hidden;
 }
 
+.instructions-wrapper .instruction-img-wrapper .instruction {
+  padding: 1rem 0;
+}
+
 .instructions-wrapper .instruction-img-wrapper .instruction img {
   height: 8rem;
   width: 8rem;
 }
 
-.instructions-wrapper .instruction-img-wrapper .instruction .timer-bottom {
-  top: 50%;
+.instructions-wrapper .instruction-img-wrapper .instruction .timer-bottom-wrapper {
+  position: absolute;
   left: 50%;
-  padding: 1rem 0;
-  width: 10rem;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.instructions-wrapper .instruction-img-wrapper .instruction .timer-bottom-wrapper .timer-bottom {
+  padding: 2rem;
+  width: 8rem;
   border-radius: 50%;
+}
+
+.instructions-wrapper .instruction-img-wrapper .instruction p {
+  color: #7E797C;
+}
+
+.instructions-wrapper .instruction-img-wrapper-mobile {
+  width: 100%;
+  overflow: hidden;
+  display: none;
+}
+
+.instructions-wrapper .instruction-img-wrapper-mobile .instruction {
+  padding: 1rem 0;
+}
+
+.instructions-wrapper .instruction-img-wrapper-mobile .instruction img {
+  height: 8rem;
+  width: 8rem;
+}
+
+.instructions-wrapper .instruction-img-wrapper-mobile .instruction .timer-bottom-wrapper {
+  position: static;
+}
+
+.instructions-wrapper .instruction-img-wrapper-mobile .instruction .timer-bottom-wrapper .timer-bottom {
+  padding: 2rem;
+  width: 8rem;
+  border-radius: 50%;
+}
+
+.instructions-wrapper .instruction-img-wrapper-mobile .instruction p {
+  color: #7E797C;
 }
 
 .report-wrapper {
@@ -290,19 +322,21 @@ body .modal .modal-content {
 }
 
 .crackles-wrapper {
-  background: -webkit-gradient(linear, left top, left bottom, from(#f5f69b), color-stop(#fff), to(#fff));
-  background: linear-gradient(#f5f69b, #fff, #fff);
+  background: -webkit-gradient(linear, left top, left bottom, from(#f5f69b), to(#fff));
+  background: linear-gradient(#f5f69b, #fff);
   padding-top: 1%;
 }
 
-.crackles-wrapper h4 {
+.crackles-wrapper h2 {
+  color: var(--grey);
   margin-top: 2rem;
   font-weight: 800;
-  font-size: 1rem;
   font-family: "Poppins";
+  text-transform: uppercase;
 }
 
 .crackles-wrapper p {
+  color: var(--grey);
   font-weight: 600;
   font-family: "Poppins";
   font-size: 1rem;
@@ -313,18 +347,21 @@ body .modal .modal-content {
 }
 
 .crackles-wrapper .precautions {
-  padding: 1rem 4rem;
+  padding: 1rem 2rem;
 }
 
 .crackles-wrapper .precautions .precautions-inner {
+  padding: 1rem;
   background: #fff;
 }
 
 .crackles-wrapper .precautions ul {
   padding: 0 2rem;
+  margin: 2rem 0;
 }
 
 .crackles-wrapper .precautions h4 {
+  margin-top: 1rem;
   font-weight: 600;
   font-size: 2rem;
   color: #ffaec8;
@@ -332,7 +369,7 @@ body .modal .modal-content {
 
 .crackles-wrapper .precautions button {
   background-color: #ffaec8;
-  padding: 0.5rem;
+  padding: 0.5rem 2rem;
   margin-bottom: 1rem;
 }
 
@@ -345,6 +382,8 @@ body .modal .modal-content {
 }
 
 .crackles-wrapper .precautions .recommended-consultations .consultations {
+  padding: 1rem 0;
+  font-family: 'Poppins';
   margin: 0  0.25rem !important;
 }
 
@@ -360,6 +399,7 @@ body .modal .modal-content {
 }
 
 .crackles-wrapper .precautions .recommended-consultations .consultations h6 {
+  font-weight: 600;
   text-transform: uppercase;
   margin: 0.5rem 0;
 }
@@ -407,29 +447,7 @@ body .modal .modal-content {
   padding-bottom: 0rem;
 }
 
-@media only screen and (max-width: 768px) {
-  .normal-wrapper .precautions {
-    position: absolute;
-    top: 65%;
-    font-size: 1rem;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
-    margin: 4rem 0;
-    padding: 0rem 1rem 0rem 2rem;
-    width: 90%;
-  }
-  .normal-wrapper .precautions button {
-    margin-bottom: 1rem;
-  }
-  .normal-wrapper .body {
-    line-height: 1%;
-    padding: 3%;
-  }
-  .normal-wrapper .pre {
-    padding-top: 1%;
-    padding-bottom: 1%;
-  }
+@media only screen and (max-width: 975px) {
   .repnorm-wrapper .repnorm {
     width: 90%;
     padding: 0rem 2rem 0rem 2rem;
@@ -454,38 +472,28 @@ body .modal .modal-content {
   .main-wrapper .main .bottom-caution {
     padding: 1rem;
   }
-  .button-start {
-    height: 10rem;
+  .bottom-caution {
+    width: 80%;
   }
   .instructions-wrapper {
-    margin: 0 1.5rem;
-    padding: 1rem;
-    width: 90%;
+    margin: 1.5rem;
     -webkit-transform: none;
             transform: none;
+    padding: 1rem;
+    width: 90%;
   }
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 76ea1cbe9d477a9ef8379ac379c43e5e38f11b5a
   .repcrack-wrapper {
-    padding-top: 5%;
-    height: 120%;
+    padding-top: 1%;
     background: -webkit-gradient(linear, left top, left bottom, from(var(--pink)), color-stop(#fff), color-stop(#fff), color-stop(#fff), to(#fff));
     background: linear-gradient(var(--pink), #fff, #fff, #fff, #fff);
   }
   .repcrack-wrapper .repcrack {
-    width: 50%;
+    width: 80%;
     background: #fff;
-    position: absolute;
-    top: 55%;
+    top: 70%;
     left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
-    margin: 2rem 0;
-    padding: 1% 2rem 2rem 2%;
+    margin: 2rem 3rem;
+    padding: 2rem;
   }
   .repcrack-wrapper .repcrack h5 {
     font-weight: 600;
@@ -500,36 +508,33 @@ body .modal .modal-content {
     color: #ffaec8;
   }
   .repcrack-wrapper .repcrack .prec {
-    padding-left: 4%;
+    padding-left: 6%;
   }
   .repcrack-wrapper .repcrack .nav-logo {
     padding: 2rem;
   }
-  .repcrack-wrapper .repcrack-wrapper .repcrack {
-    width: 90%;
-    top: 65%;
-    padding: 1rem;
-    height: 132%;
+  .repcrack-wrapper .repcrack button {
+    background-color: #ffaec8;
+    padding: 0.5rem;
+    top: 50%;
+    bottom: 50%;
+    margin-left: 3.5rem;
   }
   .repcrack-wrapper .repcrack-wrapper .body {
     background: #fff;
   }
   .repwheezes-wrapper {
-    padding-top: 5%;
     height: 100%;
     background: -webkit-gradient(linear, left top, left bottom, from(var(--pink)), color-stop(#fff), color-stop(#fff), color-stop(#fff), to(#fff));
     background: linear-gradient(var(--pink), #fff, #fff, #fff, #fff);
   }
   .repwheezes-wrapper .repwheezes {
-    width: 50%;
+    width: 80%;
     background: #fff;
-    position: absolute;
-    top: 60%;
+    top: 70%;
     left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
-    margin: 2rem 0;
-    padding: 1% 2rem;
+    margin: 2rem 3rem;
+    padding: 2rem;
   }
   .repwheezes-wrapper .repwheezes h5 {
     font-weight: 600;
@@ -549,11 +554,7 @@ body .modal .modal-content {
   .repwheezes-wrapper .repwheezes .nav-logo {
     padding: 2rem;
   }
-<<<<<<< HEAD
   .repwheezes-wrapper .repwheezes-wrapper .repwheezes {
-=======
-  .repwheezes-wrapper .repwheezes {
->>>>>>> 76ea1cbe9d477a9ef8379ac379c43e5e38f11b5a
     width: 95%;
     height: 157%;
     top: 75%;
@@ -561,309 +562,29 @@ body .modal .modal-content {
     padding: 1rem 1rem 1rem 1rem;
     font-size: 1rem;
   }
-<<<<<<< HEAD
-  .repwheezes-wrapper .repwheezes-wrapper .h5 {
-    bottom: 1%;
-  }
-  .repwheezes-wrapper .repwheezes-wrapper .prec {
-    bottom: 0%;
-  }
-  .repwheezes-wrapper .repwheezes-wrapper .nav-logo {
-=======
-  .repwheezes-wrapper .h5 {
-    bottom: 1%;
-  }
-  .repwheezes-wrapper .prec {
-    bottom: 0%;
-  }
-  .repwheezes-wrapper .nav-logo {
->>>>>>> 76ea1cbe9d477a9ef8379ac379c43e5e38f11b5a
-    padding-bottom: 4%;
-    top: 0%;
-    font-size: 1%;
-  }
-<<<<<<< HEAD
-  .repwheezes-wrapper .repwheezes-wrapper .body {
-    background: #fff;
-  }
-  .repwheezes-wrapper .main-wrapper .main {
-=======
   .repwheezes-wrapper .body {
     background: #fff;
   }
   .main-wrapper .main {
->>>>>>> 76ea1cbe9d477a9ef8379ac379c43e5e38f11b5a
     position: static;
     -webkit-transform: translateY(10%);
             transform: translateY(10%);
   }
-<<<<<<< HEAD
-  .repwheezes-wrapper .main-wrapper .main .bottom-caution {
-    padding: 1rem;
-  }
-  .repwheezes-wrapper .button-start {
-    height: 10rem;
-  }
-  .repwheezes-wrapper .instructions-wrapper {
-=======
   .main-wrapper .main .bottom-caution {
     padding: 1rem;
   }
-  .button-start {
-    height: 10rem;
-  }
-  .instructions-wrapper {
->>>>>>> 76ea1cbe9d477a9ef8379ac379c43e5e38f11b5a
-    margin: 0 1.5rem;
-    padding: 1rem;
-    width: 90%;
-    -webkit-transform: none;
-            transform: none;
-  }
-<<<<<<< HEAD
-  .repwheezes-wrapper .normal-wrapper .precautions {
-=======
-  .normal-wrapper .precautions {
->>>>>>> 76ea1cbe9d477a9ef8379ac379c43e5e38f11b5a
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
-    margin: 5rem 0;
-    width: 80%;
-  }
-<<<<<<< HEAD
-  .repwheezes-wrapper .normal-wrapper {
+  .normal-wrapper {
     padding-top: 0.5%;
     padding-bottom: 0.5%;
   }
-  .repwheezes-wrapper .normal-wrapper .precautions {
-    position: absolute;
-    top: 65%;
-=======
-=======
->>>>>>> 454217cd191c4df278eef0fb997024dbe17d08dc
-}
-
-.repcrack-wrapper {
-  padding-top: 1%;
-  background: -webkit-gradient(linear, left top, left bottom, from(var(--pink)), color-stop(#fff), color-stop(#fff), color-stop(#fff), to(#fff));
-  background: linear-gradient(var(--pink), #fff, #fff, #fff, #fff);
-}
-
-.repcrack-wrapper .repcrack {
-  width: 80%;
-  background: #fff;
-  top: 70%;
-  left: 50%;
-  margin: 2rem 3rem;
-  padding: 2rem;
-}
-
-.repcrack-wrapper .repcrack h5 {
-  font-weight: 600;
-  font-size: 2.5rem;
-  color: #ffaec8;
-  text-align: center;
-}
-
-.repcrack-wrapper .repcrack label {
-  text-align: left;
-  font-weight: 600;
-  font-size: 1.2rem;
-  color: #ffaec8;
-}
-
-.repcrack-wrapper .repcrack .prec {
-  padding-left: 6%;
-}
-
-.repcrack-wrapper .repcrack .nav-logo {
-  padding: 2rem;
-}
-
-.repcrack-wrapper .repcrack button {
-  background-color: #ffaec8;
-  padding: 0.5rem;
-  top: 50%;
-  bottom: 50%;
-  margin-left: 3.5rem;
-}
-
-.repcrack-wrapper .repcrack-wrapper .body {
-  background: #fff;
-}
-
-.repwheezes-wrapper {
-  padding-top: 1%;
-  background: -webkit-gradient(linear, left top, left bottom, from(var(--pink)), color-stop(#fff), color-stop(#fff), color-stop(#fff), to(#fff));
-  background: linear-gradient(var(--pink), #fff, #fff, #fff, #fff);
-}
-
-.repwheezes-wrapper .repwheezes {
-  width: 80%;
-  background: #fff;
-  top: 70%;
-  left: 50%;
-  margin: 2rem 3rem;
-  padding: 2rem;
-}
-
-.repwheezes-wrapper .repwheezes h5 {
-  font-weight: 600;
-  font-size: 2.5rem;
-  color: #ffaec8;
-  text-align: center;
-}
-
-.repwheezes-wrapper .repwheezes label {
-  text-align: left;
-  font-weight: 600;
-  font-size: 1.2rem;
-  color: #ffaec8;
-}
-
-.repwheezes-wrapper .repwheezes .prec {
-  padding-left: 4%;
-}
-
-.repwheezes-wrapper .repwheezes .nav-logo {
-  padding: 2rem;
-}
-
-.repwheezes-wrapper .repwheezes button {
-  background-color: #ffaec8;
-  padding: 0.5rem;
-  top: 50%;
-  bottom: 50%;
-  margin-left: 3.5rem;
-}
-
-.repwheezes-wrapper .repwheezes-wrapper .body {
-  background: #fff;
-}
-
-.repwheezes-wrapper .main-wrapper .main {
-  position: static;
-  -webkit-transform: translateY(10%);
-          transform: translateY(10%);
-}
-
-.repwheezes-wrapper .main-wrapper .main .bottom-caution {
-  padding: 1rem;
-}
-
-.repwheezes-wrapper .button-start {
-  height: 10rem;
-}
-
-.repwheezes-wrapper .instructions-wrapper {
-  margin: 0 1.5rem;
-  padding: 1rem;
-  width: 90%;
-  -webkit-transform: none;
-          transform: none;
-}
-
-.repwheezes-wrapper .normal-wrapper .precautions {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  margin: 5rem 0;
-  width: 80%;
-}
-
-.repwheezes-wrapper .normal-wrapper {
-  padding-top: 0.5%;
-  padding-bottom: 0.5%;
-}
-
-.repwheezes-wrapper .normal-wrapper .precautions {
-  position: absolute;
-  top: 65%;
-  font-size: 1rem;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  margin: 6rem 0;
-  padding: 0rem 1rem 0rem 2rem;
-  width: 90%;
-}
-
-.repwheezes-wrapper .normal-wrapper .precautions button {
-  margin-bottom: 1rem;
-}
-
-.repwheezes-wrapper .normal-wrapper .body {
-  line-height: 1%;
-  padding: 3%;
-}
-
-.repwheezes-wrapper .normal-wrapper .pre {
-  padding-top: 1%;
-  padding-bottom: 1%;
-}
-
-@media only screen and (max-width: 425px) {
   .normal-wrapper .precautions {
     position: absolute;
-    top: 70%;
->>>>>>> 76ea1cbe9d477a9ef8379ac379c43e5e38f11b5a
+    top: 65%;
     font-size: 1rem;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
-<<<<<<< HEAD
     margin: 6rem 0;
-    padding: 0rem 1rem 0rem 2rem;
-    width: 90%;
-  }
-  .repwheezes-wrapper .normal-wrapper .precautions button {
-    margin-bottom: 1rem;
-  }
-  .repwheezes-wrapper .normal-wrapper .body {
-    line-height: 1%;
-    padding: 3%;
-  }
-  .repwheezes-wrapper .normal-wrapper .pre {
-    padding-top: 1%;
-    padding-bottom: 1%;
-  }
-}
-
-@media only screen and (max-width: 768px) and (max-width: 375px) {
-  .instructions-wrapper {
-    margin: 0 1rem;
-    padding: 0.5rem;
-    width: 90%;
-    -webkit-transform: none;
-            transform: none;
-  }
-  .instructions-wrapper h3 {
-    font-size: 1rem;
-  }
-  .instructions-img-wrapper .instruction {
-    margin-left: 1rem;
-    width: 3.5rem;
-    height: 8rem;
-    padding: 0.5rem;
-  }
-  .instructions-img-wrapper .instruction .timer-bottom {
-    position: relative;
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
-    margin: 0.5rem;
-  }
-  .instructions-img-wrapper .instruction .timer-bottom h4 {
-    text-align: center;
-    font-size: 0.5rem;
-    font-weight: 400;
-=======
-    margin: 5rem 0;
     padding: 0rem 1rem 0rem 2rem;
     width: 90%;
   }
@@ -878,6 +599,26 @@ body .modal .modal-content {
     padding-top: 1%;
     padding-bottom: 1%;
   }
+}
+
+@media only screen and (max-width: 500px) {
+  .instructions-wrapper .instruction-img-wrapper {
+    display: none;
+  }
+  .instructions-wrapper .instruction-img-wrapper-mobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .normal-wrapper {
+    height: 100vh;
+  }
+  .normal-wrapper .precautions {
+    top: 70%;
+  }
+}
+
+@media only screen and (max-width: 425px) {
   .repcrack-wrapper .repcrack {
     width: 90%;
   }
@@ -885,26 +626,22 @@ body .modal .modal-content {
     width: 90%;
     top: 85%;
   }
+  .normal-wrapper {
+    height: 120vh;
+  }
+  .bottom-caution {
+    margin: 1rem 0;
+    padding: 0.5rem;
+    width: 100%;
+  }
 }
 
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 395px) {
+  .instructions-wrapper {
+    margin: 0 1rem;
+  }
   .normal-wrapper .precautions {
-    top: 75%;
-  }
-  .normal-wrapper .body {
-    line-height: 1%;
-    padding: 3%;
-  }
-  .normal-wrapper .pre {
-    padding-top: 1%;
-    padding-bottom: 1%;
-  }
-  .repcrack-wrapper .repcrack {
-    padding: 1rem 2rem 2rem 1.5rem;
-  }
-  .repwheezes-wrapper .repwheezes {
-    top: 90%;
->>>>>>> 76ea1cbe9d477a9ef8379ac379c43e5e38f11b5a
+    top: 80%;
   }
 }
 /*# sourceMappingURL=style.css.map */
