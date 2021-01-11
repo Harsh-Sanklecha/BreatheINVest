@@ -80,7 +80,7 @@ body{
 .normal-wrapper{
     background: linear-gradient(#a1f69b,#fff,#fff);
     height: 100%;
-    padding-top: 1%;
+    padding: 1%;
 
     h3{
         margin-top: 2rem;
@@ -146,17 +146,6 @@ body{
         padding-top: 3%;
         padding-bottom: 2%;
     }
-//     .normal-wrapper .precautions {
-//         position: absolute;
-//         top: 50%;
-//         left: 50%;
-//         transform: translate(-50%, -50%);
-//         margin: 5rem 0;
-//         padding: 1rem 4rem;
-//         width: 80%;
-//     }
-    
-// }
 
 }
 
@@ -286,9 +275,7 @@ body{
             padding: 2rem;
         }
    }
-}
 
-@media only screen and (max-width: 768px){
     .report-wrapper .report{
         width: 80%;
         padding: 0.5rem 2rem 1rem 2rem;
@@ -501,8 +488,6 @@ body{
     }
 }
 
-@media only screen and (max-width: 768px) {
-
     .main-wrapper .main{
         position: static;
         transform: translateY(10%);
@@ -524,7 +509,6 @@ body{
         transform: none;
     }
     
-}
 
 .repcrack-wrapper{
     padding-top: 5%;
