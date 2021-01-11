@@ -100,10 +100,6 @@ body{
         top: 70%;
         left: 50%;
         transform: translate(-50%,-50%);
-<<<<<<< HEAD
-=======
-        margin: 5rem 0;
->>>>>>> 1e4dac165c77f6119918e95394770526f30bf2f6
         padding: 1rem 4rem;
 
         h5{
@@ -126,19 +122,24 @@ body{
 @media only screen and (max-width: 768px) {
     .normal-wrapper{
         padding-top: 0.5%;
-        padding-bottom: 00.5%;
+        padding-bottom: 0.5%;
     }
     .normal-wrapper .precautions {
         position: absolute;
         top: 65%;
+
         font-size: 1rem;
         left: 50%;
         // bottom: 1%;
         transform: translate(-50%, -50%);
-        margin: 5rem 0;
+        margin: 6rem 0;
         padding: 0rem 1rem 0rem 2rem;
-        height: 75%;
+        // height: 75%;
         width: 90%;
+        
+        button{
+            margin-bottom: 1rem;
+        }
     }
 
     .normal-wrapper .body{
@@ -146,9 +147,10 @@ body{
         padding: 3%;
     }
 
+
     .normal-wrapper .pre{
-        padding-top: 3%;
-        padding-bottom: 2%;
+        padding-top: 1%;
+        padding-bottom: 1%;
     }
 //     .normal-wrapper .precautions {
 //         position: absolute;
