@@ -13,7 +13,7 @@ html{
 }
 
 body{
-    height: 100vh;
+    min-height: 100vh;
     background: linear-gradient(var(--pink),#fff,#fff);
 }
 
@@ -100,10 +100,6 @@ body{
         top: 70%;
         left: 50%;
         transform: translate(-50%,-50%);
-<<<<<<< HEAD
-=======
-        margin: 5rem 0;
->>>>>>> 1e4dac165c77f6119918e95394770526f30bf2f6
         padding: 1rem 4rem;
 
         h5{
