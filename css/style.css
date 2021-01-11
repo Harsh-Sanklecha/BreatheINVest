@@ -80,10 +80,20 @@ body .modal .modal-content {
 }
 
 .normal-wrapper {
+<<<<<<< HEAD
   background: -webkit-gradient(linear, left top, left bottom, from(#a1f69b), color-stop(#fff), to(#fff));
   background: linear-gradient(#a1f69b, #fff, #fff);
+  height: 80vh;
+=======
+  background: -webkit-gradient(linear, left top, left bottom, from(#a1f69b), to(#fff));
+  background: linear-gradient(#a1f69b, #fff);
   height: 100%;
+>>>>>>> e965b289d84bda42bf930030929e40bcee825504
   padding: 1%;
+}
+
+.normal-wrapper .modal .body {
+  padding-left: 20rem 2rem;
 }
 
 .normal-wrapper h3 {
@@ -134,7 +144,7 @@ body .modal .modal-content {
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   background: #fff;
-  padding: 40px;
+  padding: 50px 40px;
   display: inline-block;
   border-radius: 50%;
   font-size: 1.5rem;
@@ -144,6 +154,10 @@ body .modal .modal-content {
 
 .button-start button h3 {
   font-weight: 600;
+}
+
+.button-start #stopButton {
+  padding: 40px;
 }
 
 .button-start #stopButton h3 {
@@ -211,15 +225,12 @@ body .modal .modal-content {
 }
 
 .report-wrapper .report {
-  width: 50%;
+  width: 80%;
   background: #fff;
-  position: absolute;
   top: 45%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  margin: 2rem 0;
-  padding: 1% 2rem;
+  margin: 2rem 3rem;
+  padding: 1rem;
 }
 
 .report-wrapper .report h5 {
@@ -376,6 +387,28 @@ body .modal .modal-content {
 }
 
 @media only screen and (max-width: 768px) {
+  .normal-wrapper .precautions {
+    position: absolute;
+    top: 65%;
+    font-size: 1rem;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    margin: 4rem 0;
+    padding: 0rem 1rem 0rem 2rem;
+    width: 90%;
+  }
+  .normal-wrapper .precautions button {
+    margin-bottom: 1rem;
+  }
+  .normal-wrapper .body {
+    line-height: 1%;
+    padding: 3%;
+  }
+  .normal-wrapper .pre {
+    padding-top: 1%;
+    padding-bottom: 1%;
+  }
   .repnorm-wrapper .repnorm {
     width: 90%;
     padding: 0rem 2rem 0rem 2rem;
@@ -410,6 +443,10 @@ body .modal .modal-content {
     -webkit-transform: none;
             transform: none;
   }
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 76ea1cbe9d477a9ef8379ac379c43e5e38f11b5a
   .repcrack-wrapper {
     padding-top: 5%;
     height: 120%;
@@ -489,7 +526,11 @@ body .modal .modal-content {
   .repwheezes-wrapper .repwheezes .nav-logo {
     padding: 2rem;
   }
+<<<<<<< HEAD
   .repwheezes-wrapper .repwheezes-wrapper .repwheezes {
+=======
+  .repwheezes-wrapper .repwheezes {
+>>>>>>> 76ea1cbe9d477a9ef8379ac379c43e5e38f11b5a
     width: 95%;
     height: 157%;
     top: 75%;
@@ -497,6 +538,7 @@ body .modal .modal-content {
     padding: 1rem 1rem 1rem 1rem;
     font-size: 1rem;
   }
+<<<<<<< HEAD
   .repwheezes-wrapper .repwheezes-wrapper .h5 {
     bottom: 1%;
   }
@@ -504,18 +546,35 @@ body .modal .modal-content {
     bottom: 0%;
   }
   .repwheezes-wrapper .repwheezes-wrapper .nav-logo {
+=======
+  .repwheezes-wrapper .h5 {
+    bottom: 1%;
+  }
+  .repwheezes-wrapper .prec {
+    bottom: 0%;
+  }
+  .repwheezes-wrapper .nav-logo {
+>>>>>>> 76ea1cbe9d477a9ef8379ac379c43e5e38f11b5a
     padding-bottom: 4%;
     top: 0%;
     font-size: 1%;
   }
+<<<<<<< HEAD
   .repwheezes-wrapper .repwheezes-wrapper .body {
     background: #fff;
   }
   .repwheezes-wrapper .main-wrapper .main {
+=======
+  .repwheezes-wrapper .body {
+    background: #fff;
+  }
+  .main-wrapper .main {
+>>>>>>> 76ea1cbe9d477a9ef8379ac379c43e5e38f11b5a
     position: static;
     -webkit-transform: translateY(10%);
             transform: translateY(10%);
   }
+<<<<<<< HEAD
   .repwheezes-wrapper .main-wrapper .main .bottom-caution {
     padding: 1rem;
   }
@@ -523,13 +582,26 @@ body .modal .modal-content {
     height: 10rem;
   }
   .repwheezes-wrapper .instructions-wrapper {
+=======
+  .main-wrapper .main .bottom-caution {
+    padding: 1rem;
+  }
+  .button-start {
+    height: 10rem;
+  }
+  .instructions-wrapper {
+>>>>>>> 76ea1cbe9d477a9ef8379ac379c43e5e38f11b5a
     margin: 0 1.5rem;
     padding: 1rem;
     width: 90%;
     -webkit-transform: none;
             transform: none;
   }
+<<<<<<< HEAD
   .repwheezes-wrapper .normal-wrapper .precautions {
+=======
+  .normal-wrapper .precautions {
+>>>>>>> 76ea1cbe9d477a9ef8379ac379c43e5e38f11b5a
     position: absolute;
     top: 50%;
     left: 50%;
@@ -538,6 +610,7 @@ body .modal .modal-content {
     margin: 5rem 0;
     width: 80%;
   }
+<<<<<<< HEAD
   .repwheezes-wrapper .normal-wrapper {
     padding-top: 0.5%;
     padding-bottom: 0.5%;
@@ -545,10 +618,171 @@ body .modal .modal-content {
   .repwheezes-wrapper .normal-wrapper .precautions {
     position: absolute;
     top: 65%;
+=======
+=======
+}
+
+.repcrack-wrapper {
+  height: 120%;
+  background: -webkit-gradient(linear, left top, left bottom, from(var(--pink)), color-stop(#fff), color-stop(#fff), color-stop(#fff), to(#fff));
+  background: linear-gradient(var(--pink), #fff, #fff, #fff, #fff);
+}
+
+.repcrack-wrapper .repcrack {
+  width: 50%;
+  background: #fff;
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  margin: 2rem 0;
+  padding: 1% 2rem 2rem 2%;
+}
+
+.repcrack-wrapper .repcrack h5 {
+  font-weight: 600;
+  font-size: 2.5rem;
+  color: #ffaec8;
+  text-align: center;
+}
+
+.repcrack-wrapper .repcrack label {
+  text-align: left;
+  font-weight: 600;
+  font-size: 1.2rem;
+  color: #ffaec8;
+}
+
+.repcrack-wrapper .repcrack .prec {
+  padding-left: 6%;
+}
+
+.repcrack-wrapper .repcrack .nav-logo {
+  padding: 2rem;
+}
+
+.repcrack-wrapper .repcrack-wrapper .repcrack {
+  width: 90%;
+  top: 65%;
+  padding: 1rem;
+  height: 132%;
+}
+
+.repcrack-wrapper .repcrack-wrapper .body {
+  background: #fff;
+}
+
+.repwheezes-wrapper {
+  height: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, from(var(--pink)), color-stop(#fff), color-stop(#fff), color-stop(#fff), to(#fff));
+  background: linear-gradient(var(--pink), #fff, #fff, #fff, #fff);
+}
+
+.repwheezes-wrapper .repwheezes {
+  width: 90%;
+  background: #fff;
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  margin: 2rem 0;
+  padding: 1% 2rem;
+}
+
+.repwheezes-wrapper .repwheezes h5 {
+  font-weight: 600;
+  font-size: 2.5rem;
+  color: #ffaec8;
+  text-align: center;
+}
+
+.repwheezes-wrapper .repwheezes label {
+  text-align: left;
+  font-weight: 600;
+  font-size: 1.2rem;
+  color: #ffaec8;
+}
+
+.repwheezes-wrapper .repwheezes .prec {
+  padding-left: 4%;
+}
+
+.repwheezes-wrapper .repwheezes .nav-logo {
+  padding: 2rem;
+}
+
+.repwheezes-wrapper .repwheezes-wrapper .repwheezes {
+  width: 95%;
+  height: 157%;
+  top: 75%;
+  bottom: 1%;
+  padding: 1rem 1rem 1rem 1rem;
+  font-size: 1rem;
+}
+
+.repwheezes-wrapper .repwheezes-wrapper .h5 {
+  bottom: 1%;
+}
+
+.repwheezes-wrapper .repwheezes-wrapper .prec {
+  bottom: 0%;
+}
+
+.repwheezes-wrapper .repwheezes-wrapper .nav-logo {
+  padding-bottom: 4%;
+  top: 0%;
+  font-size: 1%;
+}
+
+.repwheezes-wrapper .repwheezes-wrapper .body {
+  background: #fff;
+}
+
+.repwheezes-wrapper .main-wrapper .main {
+  position: static;
+  -webkit-transform: translateY(10%);
+          transform: translateY(10%);
+}
+
+.repwheezes-wrapper .main-wrapper .main .bottom-caution {
+  padding: 1rem;
+}
+
+.repwheezes-wrapper .button-start {
+  height: 10rem;
+}
+
+.repwheezes-wrapper .instructions-wrapper {
+  margin: 0 1.5rem;
+  padding: 1rem;
+  width: 90%;
+  -webkit-transform: none;
+          transform: none;
+}
+
+.repwheezes-wrapper .normal-wrapper .precautions {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  margin: 5rem 0;
+  width: 80%;
+>>>>>>> e965b289d84bda42bf930030929e40bcee825504
+}
+
+@media only screen and (max-width: 425px) {
+  .normal-wrapper .precautions {
+    position: absolute;
+    top: 70%;
+>>>>>>> 76ea1cbe9d477a9ef8379ac379c43e5e38f11b5a
     font-size: 1rem;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
+<<<<<<< HEAD
     margin: 6rem 0;
     padding: 0rem 1rem 0rem 2rem;
     width: 90%;
@@ -594,6 +828,49 @@ body .modal .modal-content {
     text-align: center;
     font-size: 0.5rem;
     font-weight: 400;
+=======
+    margin: 5rem 0;
+    padding: 0rem 1rem 0rem 2rem;
+    width: 90%;
+  }
+  .normal-wrapper .precautions button {
+    margin-bottom: 1rem;
+  }
+  .normal-wrapper .body {
+    line-height: 1%;
+    padding: 3%;
+  }
+  .normal-wrapper .pre {
+    padding-top: 1%;
+    padding-bottom: 1%;
+  }
+  .repcrack-wrapper .repcrack {
+    width: 90%;
+  }
+  .repwheezes-wrapper .repwheezes {
+    width: 90%;
+    top: 85%;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .normal-wrapper .precautions {
+    top: 75%;
+  }
+  .normal-wrapper .body {
+    line-height: 1%;
+    padding: 3%;
+  }
+  .normal-wrapper .pre {
+    padding-top: 1%;
+    padding-bottom: 1%;
+  }
+  .repcrack-wrapper .repcrack {
+    padding: 1rem 2rem 2rem 1.5rem;
+  }
+  .repwheezes-wrapper .repwheezes {
+    top: 90%;
+>>>>>>> 76ea1cbe9d477a9ef8379ac379c43e5e38f11b5a
   }
 }
 /*# sourceMappingURL=style.css.map */
