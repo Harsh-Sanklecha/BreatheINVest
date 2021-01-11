@@ -104,6 +104,7 @@ body {
 
 .normal-wrapper h3 {
   color: var(--grey);
+  text-transform: uppercase;
   margin-top: 2rem;
   font-weight: 800;
   font-size: 3rem;
