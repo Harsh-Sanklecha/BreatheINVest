@@ -15,6 +15,19 @@ html{
 body{
     min-height: 100vh;
     background: linear-gradient(var(--pink),#fff,#fff);
+    .modal{
+        .modal-header{ 
+             .modal-title {
+                text-align: center;
+            }
+        }
+        .modal-content{
+            background-color:#ffe6e6;
+            margin: 5rem; 
+            padding: 2rem;
+            width: 80%;
+        }
+    }
 }
 
 .navigation-bar{
@@ -190,12 +203,12 @@ body{
             }
 
             .timer-bottom{
-                position: absolute;
+                // position: absolute;
                 top: 50%;
                 left: 50%;
-                transform: translate(-50%,-50%);
+                // transform: translate(-50%,-50%);
                 padding: 1rem 0;
-                width: 5rem;
+                width: 10rem;
                 border-radius: 50%;
             }
         }
@@ -602,7 +615,35 @@ body{
 }
 
 @media only screen and (max-width: 375px) {
+    .instructions-wrapper{
+        margin: 0 1rem;
+        padding: 0.5rem;
+        width: 90%;
+        transform: none;
+        h3{
+            font-size: 1rem;
+        }
+    }
+     .instructions-img-wrapper{
+         .instruction{
+             margin-left: 1rem;
+             width: 3.5rem;
+             height: 8rem;
+             padding: 0.5rem;
+             
+             .timer-bottom{
+                 position: relative;
+                 align-self: center;
+                 margin: 0.5rem;
+                 h4{
+                     text-align: center;
+                     font-size: 0.5rem;
+                     font-weight: 400;
+                 }
+                
+             }
+         }
+     }
     
-
+    }   
 }
-   
