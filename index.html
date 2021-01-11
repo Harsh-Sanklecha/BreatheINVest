@@ -28,7 +28,28 @@
     <title>Breathe-IN-vest</title>
 </head>
 <body>
+    <!-- Modal Starts -->
     
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title " id="exampleModalLabel">About</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p>Breath-IN-vest is a self respiratory diagnostic device which can detect any kind of known respiratory abnormalities by diagnosing your breath sound.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal Ends -->
     <!-- Start Navigation-bar -->
     <div class="navigation-bar">
         <nav class="navbar navbar-light justify-content-between">
@@ -37,10 +58,10 @@
                 <img src="img/nav-logo.png">
             </a>
             <div class="nav-right">
-                <a href="#">
+                <button class="btn" data-toggle="modal" data-target="#exampleModal">
 
                     <img src="img/info.png">
-                </a>
+                </button>
             </div>
         </nav>
     </div>
@@ -70,6 +91,11 @@
     
     <!-- Bootstrap JS -->
     <script src="js/bootstrap.min.js"></script>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.dom.min.js"></script>
+<script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
 
     <!-- Custom JS -->
     <script src="js/main.js"></script>
