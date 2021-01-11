@@ -31,6 +31,66 @@
 
 <body>
 
+      <!-- Modal -->
+    <div class="modal fade" id="exampleModalLongc" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                        <!--Main Section-->
+                        <div class="repcrack-wrapper">
+  
+                            <div class="repcrack border rounded">
+                                <h5>Report</h5>
+                    
+                                <div class="group">
+                                    <label for="exampleDate">Date:</label>
+                                </div>
+                                <div>
+                                    <label for="exampleTime">Time:</label>
+                                </div>
+                                <div class="group">
+                                    <label for="exampleName">Patient Name:</label>
+                                </div>
+                                <div class="group">
+                                    <label for="exampleAge">Age:</label>
+                                </div>
+                                <div class="group">
+                                       <label for="exampleGender1">Gender:</label>
+                                </div>
+                                <div class="group">
+                                    <label for="exampleResult">Result:</label>
+                                </div>
+                                <div class="group">
+                                    <label for="examplepreca">Suggested precautions:</label>
+                                    <br>
+                                   <ul class="prec">
+                                       <li>A humidifier to put moisture in the air and to relieve a cough.</li>
+                                       <li>Hot tea with lemon, honey, and a dash of cinnamon to help relieve a cough and fight infection.</li>
+                                       <li>Steam from a hot shower or a steam tent to help loosen phlegm.</li>
+                                       <li>A healthy diet to boost your immune system.</li>
+                                       <li>You should contact your doctor for a proper diagnosis and treatment recommendation.</li>
+                       
+                                   </ul>
+                                
+                                </div> 
+                                <button type="button" class="btn" data-dismiss="modal" >Close</button>
+                                <button class="btn">Download</button>  
+                    
+                                <div class="nav-logo text-center">
+                    
+                                    <img src="img/nav-logo.png">
+                    
+                                </div>
+                    
+                            </div> 
+                    
+                       </div>
+            <!-- End Main -->
+            </div>
+        </div>
+        </div>
+    </div>
+
     <!-- Start Navigation-bar -->
     <div class="navigation-bar">
         <nav class="navbar navbar-light justify-content-between">
@@ -69,7 +129,7 @@
     
                         </div>
                     </ul>
-                    <button class="btn">View Report</button>
+                    <button class="btn" data-toggle="modal" data-target="#exampleModalLongc" >View Report</button>
                 </div>
             </div>
             <div class="precautions col-lg-6  text-center">

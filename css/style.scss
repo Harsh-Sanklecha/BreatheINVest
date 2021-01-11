@@ -123,11 +123,8 @@ body{
     }
 }
 
-<<<<<<< HEAD
 
 
-=======
->>>>>>> ee91e9627370527f9ea13fea055a6805649ee896
 .button-start{
     margin-top: 1.5rem;
     position: relative;
@@ -248,6 +245,7 @@ body{
             padding: 0.5rem;
             top: 50%;
             bottom: 50%;
+            margin-bottom: 3.5rem;
         }
 
         .nav-logo{
@@ -255,12 +253,12 @@ body{
         }
    }
 
-    .report-wrapper .report{
-        width: 80%;
-        padding: 0.5rem 2rem 1rem 2rem;
-        top: 50%;
-        height: 100%;
-    }
+    // .report-wrapper .report{
+    //     width: 80%;
+    //     padding: 0.5rem 2rem 1rem 2rem;
+    //     top: 50%;
+    //     height: 100%;
+    // }
 
     .report-wrapper .body{
         background: #fff;
@@ -284,6 +282,10 @@ body{
         font-size: 1rem;
     }
     
+    .btn{
+        background-color: #ffaec8;
+    }
+
     .precautions{
         padding: 1rem 4rem;
 
@@ -458,19 +460,18 @@ body{
     
 
 .repcrack-wrapper{
-    // padding-top: 5%;
-    height: 120%;
+    padding-top: 1%;
     background: linear-gradient(var(--pink),#fff,#fff,#fff,#fff);
 
     .repcrack{
-        width: 50%;
+        width: 80%;
         background: #fff;
-        position: absolute;
+        // position: absolute;
         top: 70%;
         left: 50%;
-        transform: translate(-50%,-50%);
-        margin: 2rem 0;
-        padding: 1% 2rem 2rem 2%;
+        // transform: translate(-50%,-50%);
+        margin: 2rem 3rem;
+        padding: 2rem;
 
         h5{
             font-weight: 600;
@@ -495,34 +496,43 @@ body{
             padding: 2rem;
         }
 
+        button{
+            background-color: #ffaec8;
+            padding: 0.5rem;
+            top: 50%;
+            bottom: 50%;
+            margin-left: 3.5rem;
+        }
+
     }
     
-    .repcrack-wrapper .repcrack{
-        width: 90%;
-        top: 65%;
-        padding: 1rem;
-        height: 132%;
-    }
+    // .repcrack-wrapper .repcrack{
+    //     width: 90%;
+    //     top: 65%;
+    //     padding: 1rem;
+    //     height: 132%;
+    // }
 
     .repcrack-wrapper .body{
         background: #fff;
     }
+
 }
 
 .repwheezes-wrapper{
-    // padding-top: 5%;
-    height: 100%;
+    padding-top: 1%;
+    // height: 100%;
     background: linear-gradient(var(--pink),#fff,#fff,#fff,#fff);
 
     .repwheezes{
-        width: 90%;
+        width: 80%;
         background: #fff;
-        position: absolute;
+        // position: absolute;
         top: 70%;
         left: 50%;
-        transform: translate(-50%,-50%);
-        margin: 2rem 0;
-        padding: 1% 2rem;
+        // transform: translate(-50%,-50%);
+        margin: 2rem 3rem;
+        padding: 2rem;
 
         h5{
             font-weight: 600;
@@ -547,29 +557,37 @@ body{
             padding: 2rem;
         }
 
-    }
-    .repwheezes-wrapper .repwheezes{
-        width: 95%;
-        height: 157%;
-        top: 75%;
-        bottom: 1%;
-        padding: 1rem 1rem 1rem 1rem;
-        font-size: 1rem; 
-    }
+        button{
+            background-color: #ffaec8;
+            padding: 0.5rem;
+            top: 50%;
+            bottom: 50%;
+            margin-left: 3.5rem;
+        }
 
-    .repwheezes-wrapper .h5{
-        bottom: 1%;
     }
+    // .repwheezes-wrapper .repwheezes{
+    //     width: 95%;
+    //     // height: 157%;
+    //     top: 75%;
+    //     bottom: 1%;
+    //     padding: 1rem 1rem 1rem 1rem;
+    //     font-size: 1rem; 
+    // }
 
-    .repwheezes-wrapper .prec{
-        bottom: 0%;
-    }
+    // .repwheezes-wrapper .h5{
+    //     bottom: 1%;
+    // }
 
-    .repwheezes-wrapper .nav-logo{
-        padding-bottom: 4%;
-        top: 0%;
-        font-size: 1%;
-    }
+    // .repwheezes-wrapper .prec{
+    //     bottom: 0%;
+    // }
+
+    // .repwheezes-wrapper .nav-logo{
+    //     padding-bottom: 4%;
+    //     top: 0%;
+    //     font-size: 1%;
+    // }
 
     .repwheezes-wrapper .body{
         background: #fff;
@@ -604,45 +622,6 @@ body{
         margin: 5rem 0;
         width: 80%;
     }
-<<<<<<< HEAD
-
-=======
-    
-    .normal-wrapper{
-        padding-top: 0.5%;
-        padding-bottom: 0.5%;
-    }
-    .normal-wrapper .precautions {
-        position: absolute;
-        top: 65%;
-
-        font-size: 1rem;
-        left: 50%;
-        // bottom: 1%;
-        transform: translate(-50%, -50%);
-        margin: 6rem 0;
-        padding: 0rem 1rem 0rem 2rem;
-        // height: 75%;
-        width: 90%;
-        
-        button{
-            margin-bottom: 1rem;
-        }
-    }
-
-    .normal-wrapper .body{
-        line-height: 1%;
-        padding: 3%;
-    }
-
-
-    .normal-wrapper .pre{
-        padding-top: 1%;
-        padding-bottom: 1%;
-    }
-
-    
->>>>>>> ee91e9627370527f9ea13fea055a6805649ee896
 }
 
 @media only screen and (max-width: 425px) {
