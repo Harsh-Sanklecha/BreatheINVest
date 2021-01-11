@@ -13,7 +13,7 @@ html{
 }
 
 body{
-    height: 100vh;
+    min-height: 100vh;
     background: linear-gradient(var(--pink),#fff,#fff);
 }
 
@@ -80,7 +80,7 @@ body{
 .normal-wrapper{
     background: linear-gradient(#a1f69b,#fff,#fff);
     height: 100%;
-    padding-top: 1%;
+    padding: 1%;
 
     h3{
         margin-top: 2rem;
@@ -100,10 +100,6 @@ body{
         top: 70%;
         left: 50%;
         transform: translate(-50%,-50%);
-<<<<<<< HEAD
-=======
-        margin: 5rem 0;
->>>>>>> 1e4dac165c77f6119918e95394770526f30bf2f6
         padding: 1rem 4rem;
 
         h5{
@@ -126,19 +122,24 @@ body{
 @media only screen and (max-width: 768px) {
     .normal-wrapper{
         padding-top: 0.5%;
-        padding-bottom: 00.5%;
+        padding-bottom: 0.5%;
     }
     .normal-wrapper .precautions {
         position: absolute;
         top: 65%;
+
         font-size: 1rem;
         left: 50%;
         // bottom: 1%;
         transform: translate(-50%, -50%);
-        margin: 5rem 0;
+        margin: 6rem 0;
         padding: 0rem 1rem 0rem 2rem;
-        height: 75%;
+        // height: 75%;
         width: 90%;
+        
+        button{
+            margin-bottom: 1rem;
+        }
     }
 
     .normal-wrapper .body{
@@ -146,21 +147,11 @@ body{
         padding: 3%;
     }
 
+
     .normal-wrapper .pre{
-        padding-top: 3%;
-        padding-bottom: 2%;
+        padding-top: 1%;
+        padding-bottom: 1%;
     }
-//     .normal-wrapper .precautions {
-//         position: absolute;
-//         top: 50%;
-//         left: 50%;
-//         transform: translate(-50%, -50%);
-//         margin: 5rem 0;
-//         padding: 1rem 4rem;
-//         width: 80%;
-//     }
-    
-// }
 
 }
 
@@ -290,9 +281,7 @@ body{
             padding: 2rem;
         }
    }
-}
 
-@media only screen and (max-width: 768px){
     .report-wrapper .report{
         width: 80%;
         padding: 0.5rem 2rem 1rem 2rem;
@@ -442,7 +431,10 @@ body{
         bottom: 0.5%;
     }
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 5a35e700c4a1e94b1b7b16f9103d1491a3b290f2
     .main-wrapper .main{
         position: static;
         transform: translateY(10%);
@@ -464,7 +456,6 @@ body{
         transform: none;
     }
     
-}
 
 .repcrack-wrapper{
     padding-top: 5%;
@@ -616,7 +607,7 @@ body{
     
 }
 
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 375px) {
     
 
 }
