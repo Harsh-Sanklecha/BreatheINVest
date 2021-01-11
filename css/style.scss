@@ -123,8 +123,11 @@ body{
     }
 }
 
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> ee91e9627370527f9ea13fea055a6805649ee896
 .button-start{
     margin-top: 1.5rem;
     position: relative;
@@ -601,7 +604,45 @@ body{
         margin: 5rem 0;
         width: 80%;
     }
+<<<<<<< HEAD
 
+=======
+    
+    .normal-wrapper{
+        padding-top: 0.5%;
+        padding-bottom: 0.5%;
+    }
+    .normal-wrapper .precautions {
+        position: absolute;
+        top: 65%;
+
+        font-size: 1rem;
+        left: 50%;
+        // bottom: 1%;
+        transform: translate(-50%, -50%);
+        margin: 6rem 0;
+        padding: 0rem 1rem 0rem 2rem;
+        // height: 75%;
+        width: 90%;
+        
+        button{
+            margin-bottom: 1rem;
+        }
+    }
+
+    .normal-wrapper .body{
+        line-height: 1%;
+        padding: 3%;
+    }
+
+
+    .normal-wrapper .pre{
+        padding-top: 1%;
+        padding-bottom: 1%;
+    }
+
+    
+>>>>>>> ee91e9627370527f9ea13fea055a6805649ee896
 }
 
 @media only screen and (max-width: 425px) {
