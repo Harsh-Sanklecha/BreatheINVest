@@ -619,7 +619,7 @@ body {
     height: 100vh;
   }
   .normal-wrapper .precautions {
-    margin: 0;
+    margin: 1rem;
     position: static;
     -webkit-transform: none;
             transform: none;
