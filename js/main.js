@@ -68,14 +68,12 @@ function starts() {
     normal = 0;
     cw = 0;
     loop();
-    // document.getElementById("s").innerHTML = "Status: Now Recording";
 
 
 }
 
 function stops() {
     noLoop();
-    // document.getElementById("s").innerHTML = "Status: Recorded";
 
     console.log("Printing:");
     for (var i = 0; i < a.length; i++) {
@@ -98,7 +96,7 @@ function stops() {
     max = normal
     if (asthama > max) {
         max = asthama;
-        // $(location).attr('href', 'http://127.0.0.1:5500/wheezes.html');
+        $(location).attr('href', 'wheezes.html');
         result = "Wheezes"
     }
     if (covid > max) {
@@ -107,15 +105,14 @@ function stops() {
     }
     if (cw > max) {
         max = cw;
-        // $(location).attr('href', 'crackles.html');
+        $(location).attr('href', 'crackles.html');
         result = "Crackles"
 
     }
     else{
-        // $(location).attr('href', 'normal.html');
+        $(location).attr('href', 'normal.html');
     }
 
-    // document.getElementById("result").innerHTML = "Result:" + result;
     console.log("Result:" + result);
 }
 
