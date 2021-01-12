@@ -240,6 +240,10 @@ body {
   border-radius: 50%;
 }
 
+.instructions-wrapper .instruction-img-wrapper .instruction .timer-bottom-wrapper .timer-bottom h4 {
+  font-family: 'Poppins';
+}
+
 .instructions-wrapper .instruction-img-wrapper .instruction p {
   color: #7E797C;
 }
@@ -615,7 +619,11 @@ body {
     height: 100vh;
   }
   .normal-wrapper .precautions {
-    top: 70%;
+    margin: 0;
+    position: static;
+    -webkit-transform: none;
+            transform: none;
+    width: 100%;
   }
 }
 

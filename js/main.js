@@ -8,7 +8,6 @@ function myTimer(sec) {
         if (sec == 0) {
             clearInterval(timer);
             stops();
-            // $(location).attr('href', 'http://127.0.0.1:5500/normal.html')
         }
         timeLeftDisplay.innerHTML = sec
     }, 1000);
@@ -99,7 +98,7 @@ function stops() {
     max = normal
     if (asthama > max) {
         max = asthama;
-        $(location).attr('href', 'wheezes.html');
+        $(location).attr('href', 'http://127.0.0.1:5500/wheezes.html');
         result = "Wheezes"
     }
     if (covid > max) {

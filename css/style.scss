@@ -241,7 +241,11 @@ body{
                 .timer-bottom{
                     padding: 2rem;
                     width: 8rem;
-                    border-radius: 50%
+                    border-radius: 50%;
+
+                    h4{
+                        font-family: 'Poppins';
+                    }
                 }
 
             }
@@ -659,7 +663,10 @@ body{
         height: 100vh;
         
         .precautions{
-            top: 70%;
+            margin: 0;
+            position: static;
+            transform: none;
+            width: 100%;
         } 
     }
 
