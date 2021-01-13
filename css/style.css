@@ -12,8 +12,7 @@
 
 body {
   min-height: 100vh;
-  background: -webkit-gradient(linear, left top, left bottom, from(var(--pink)), color-stop(#fff), to(#fff));
-  background: linear-gradient(var(--pink), #fff, #fff);
+  background: var(--pink);
 }
 
 .modal .modal-content {
@@ -30,6 +29,10 @@ body {
 .navigation-bar .navbar {
   background: transparent;
   border-bottom: 1px solid #D1D1D1;
+}
+
+.navigation-bar .navbar .navbar-brand {
+  margin: 0;
 }
 
 .navigation-bar .navbar .navbar-brand img {
@@ -650,6 +653,10 @@ body {
     -webkit-transform: none;
             transform: none;
     width: auto;
+  }
+  .bottom-caution {
+    padding: 0 1rem;
+    width: 100%;
   }
 }
 

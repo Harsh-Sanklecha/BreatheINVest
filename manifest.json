@@ -1,16 +1,45 @@
 {
     "name": "Breathe In Vest",
-    "short_name": "BIV",
+    "short_name": "Breathe In Vest",
     "start_url": "/index.html",
     "display": "standalone",
     "background_color": "#ffe6e6",
     "theme_color": "#f092b0",
-    "orientation": "potrait-primary",
     "icons": [
         {
-            "src": "/img/favicon.png",
+            "src": "/img/logos/72x72.png",
             "type": "image/png",
             "sizes": "72x72"
+        },
+        {
+            "src": "/img/logos/96x96.png",
+            "type": "image/png",
+            "sizes": "96x96"
+        },
+        {
+            "src": "/img/logos/144x144.png",
+            "type": "image/png",
+            "sizes": "144x144"
+        },
+        {
+            "src": "/img/logos/152x152.png",
+            "type": "image/png",
+            "sizes": "152x152"
+        },
+        {
+            "src": "/img/logos/192x192.png",
+            "type": "image/png",
+            "sizes": "192x192"
+        },
+        {
+            "src": "/img/logos/384x384.png",
+            "type": "image/png",
+            "sizes": "384x384"
+        },
+        {
+            "src": "/img/logos/512x512.png",
+            "type": "image/png",
+            "sizes": "512x512"
         }
     ]
 }
