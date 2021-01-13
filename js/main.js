@@ -1,3 +1,5 @@
+var d = new Date();
+
 /* Timer Logic */
 var timer;
 const timeLeftDisplay = document.querySelector('#time-left');
@@ -99,10 +101,10 @@ function stops() {
         $(location).attr('href', 'wheezes.html');
         result = "Wheezes"
     }
-    if (covid > max) {
-        max = covid;
-        result = "Pneumonia(Suspected Covid-19)"
-    }
+    // if (covid > max) {
+    //     max = covid;
+    //     result = "Pneumonia(Suspected Covid-19)"
+    // }
     if (cw > max) {
         max = cw;
         $(location).attr('href', 'crackles.html');
@@ -129,4 +131,33 @@ $('#stopButton').click(function(){
     myTimerStop();
     $('#stopButton').css("display", "none");
     $('#startButton').css("display","block");
+});
+
+
+
+$(document).ready(function () {
+    $("#reportDownload").click(function(){
+        var Pname = $("#patientName").val();
+        var age = $("#patientAge").val();
+        var gender = $("#patientGender").val();
+
+        sessionStorage.setItem("Pname", Pname);
+        sessionStorage.setItem("age", age);
+        sessionStorage.setItem("gender", gender);
+
+        
+        console.log(Pname,age,gender);
+    });
+});
+
+$(document).ready(function () {
+    reportPname = sessionStorage.getItem("Pname");
+    reportage = sessionStorage.getItem("age");
+    reportgender = sessionStorage.getItem("gender");
+    var strDate = d.getDate() + "-" + (d.getMonth() + 1) + "-" + d.getFullYear();
+
+    $("#reportDate").html(strDate);
+    $("#reportPatientName").html(reportPname);
+    $("#reportPatientAge").html(reportage);
+    $("#reportPatientGender").html(reportgender);
 });

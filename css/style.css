@@ -16,15 +16,15 @@ body {
   background: linear-gradient(var(--pink), #fff, #fff);
 }
 
-.modal .modal-header .modal-title {
-  text-align: center;
+.modal .modal-content {
+  font-family: 'Poppins';
+  background: -webkit-gradient(linear, left top, left bottom, from(var(--pink)), color-stop(#fff), to(#fff));
+  background: linear-gradient(var(--pink), #fff, #fff);
 }
 
-.modal .modal-content {
-  background-color: #ffe6e6;
-  margin: 5rem;
-  padding: 2rem;
-  width: 80%;
+.modal .modal-content p {
+  padding: 1rem;
+  font-size: 1.2rem;
 }
 
 .navigation-bar .navbar {
@@ -285,11 +285,8 @@ body {
 }
 
 .report-wrapper .report {
-  width: 80%;
   background: #fff;
-  top: 45%;
-  left: 50%;
-  margin: 2rem 3rem;
+  margin: 1rem;
   padding: 1rem;
 }
 
@@ -312,14 +309,22 @@ body {
 
 .report-wrapper .report button {
   background-color: #ffaec8;
-  padding: 0.5rem;
+  padding: 0.5rem 3rem;
   top: 50%;
   bottom: 50%;
-  margin-bottom: 3.5rem;
+}
+
+.report-wrapper .report button:hover {
+  background: var(--darkPink);
 }
 
 .report-wrapper .report .nav-logo {
+  overflow: hidden;
   padding: 2rem;
+}
+
+.report-wrapper .report .nav-logo img {
+  width: 10rem;
 }
 
 .report-wrapper .report-wrapper .body {
@@ -410,28 +415,27 @@ body {
 }
 
 .repnorm-wrapper {
-  padding-top: 5%;
-  height: 110%;
   width: 50%;
   background: -webkit-gradient(linear, left top, left bottom, from(var(--pink)), color-stop(#fff), color-stop(#fff), color-stop(#fff), to(#fff));
   background: linear-gradient(var(--pink), #fff, #fff, #fff, #fff);
 }
 
 .repnorm-wrapper .repnorm {
-  width: 60%;
+  width: 40%;
+  border: 1px solid #ccc;
   background: #fff;
   position: absolute;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  margin: 2rem 0;
-  padding: 1% 4rem;
+  padding: 2rem;
+  font-family: 'Poppins';
 }
 
-.repnorm-wrapper .repnorm h5 {
+.repnorm-wrapper .repnorm h2 {
   font-weight: 600;
-  font-size: 2.5rem;
+  margin-bottom: 1rem;
   color: #ffaec8;
   text-align: center;
 }
@@ -439,8 +443,19 @@ body {
 .repnorm-wrapper .repnorm label {
   text-align: left;
   font-weight: 600;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   color: #ffaec8;
+}
+
+.repnorm-wrapper .repnorm td {
+  padding: 0;
+}
+
+.repnorm-wrapper .repnorm span {
+  font-weight: 600;
+  font-family: 'Poppins';
+  margin: 0 0.5rem;
+  color: #636162;
 }
 
 .repnorm-wrapper .repnorm .nav-logo {
@@ -486,6 +501,17 @@ body {
             transform: none;
     padding: 1rem;
     width: 90%;
+  }
+  .repnorm-wrapper {
+    padding: 1rem;
+    width: auto;
+  }
+  .repnorm-wrapper .repnorm {
+    padding: 1rem;
+    width: auto;
+    position: static;
+    -webkit-transform: none;
+            transform: none;
   }
   .repcrack-wrapper {
     padding-top: 1%;
@@ -623,7 +649,7 @@ body {
     position: static;
     -webkit-transform: none;
             transform: none;
-    width: 100%;
+    width: auto;
   }
 }
 

@@ -24,7 +24,7 @@
     <link rel="stylesheet" href="css/style.css">
     
     <!-- Favivon -->
-    <link rel="shortcut icon" type="image/png" href="img/logo-final.png">
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png">
     <title>Breathe-IN-vest</title>
 </head>
 <body>
@@ -33,16 +33,12 @@
 <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title " id="exampleModalLabel">About</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
+        <div class="modal-body text-center">
+          <img src="img/info.png" width="40" height="40">
           <p>Breath-IN-vest is a self respiratory diagnostic device which can detect any kind of known respiratory abnormalities by diagnosing your breath sound.</p>
+          <img src="img/discover.png">
         </div>
-        <div class="modal-footer">
+        <div class="modal-footer border-0">
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
           
         </div>
@@ -93,9 +89,20 @@
     <script src="js/bootstrap.min.js"></script>
 
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.dom.min.js"></script>
-<script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.dom.min.js"></script>
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+
+    <script>
+      navigator.mediaDevices.getUserMedia({ audio: true })
+          .then(function (stream) {
+            $(location).attr('href', 'timer.html');
+          })
+          .catch(function (err) {
+            console.log('No mic for you!')
+          });
+
+    </script>
 
     <!-- Custom JS -->
     <script src="js/main.js"></script>

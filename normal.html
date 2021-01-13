@@ -30,7 +30,7 @@
 <body>
   
   <!-- Modal -->
-  <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+  <div class="modal fade" class="p-0" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-body">
@@ -42,23 +42,23 @@
                     <h5>Report</h5>
                     <br>
 
-                    <form class="text-left">
+                    <form class="text-left" action="repnorm.html">
                     <div class="form-group">
-                        <label for="exampleInputEmail1">Name:</label>
-                        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter name">
+                        <label for="patientName">Full Name:</label>
+                        <input type="text" class="form-control" id="patientName" placeholder="Eg: John Doe" required>
                     </div>
                     <div class="form-group">
-                        <label for="exampleInputPassword1">Age:</label>
-                        <input type="number" class="form-control" id="exampleInputPassword1" placeholder="Enter a number">
+                        <label for="patientAge">Age:</label>
+                        <input type="number" class="form-control" id="patientAge" placeholder="Eg: 21" required>
                     </div>
                     <div class="form-group">
-                        <label for="exampleInputGender1">Gender:</label>
-                        <input type="text" class="form-control" id="exampleInputGender1" placeholder="Male/Female/Others">
+                        <label for="patientGender">Gender:</label>
+                        <input type="text" class="form-control" id="patientGender" placeholder="Male / Female / Other" required>
                     </div>
                     
+                    <button type="submit" class="btn mt-2 text-center" id="reportDownload">View Report</button>
                     </form>
-                    <button type="button" class="btn" data-dismiss="modal" >Close</button>
-                <button class="btn">Download</button>
+                    <!-- <button type="button" class="btn" data-dismiss="modal" >Close</button> -->
 
             <div class="nav-logo">
 
@@ -85,7 +85,7 @@
             <div class="nav-right">
                 <a href="#">
 
-                    <img src="img/info.png">
+                    <!-- <img src="img/info.png"> -->
                 </a>
             </div>
         </nav>
@@ -120,10 +120,10 @@
       <script src="js/bootstrap.min.js"></script>
 
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.dom.min.js"></script>
-<script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
-  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.dom.min.js"></script>
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    
       <!-- Custom JS -->
       <script src="js/main.js"></script>
   </body>
