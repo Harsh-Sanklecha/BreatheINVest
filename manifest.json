@@ -1,0 +1,16 @@
+{
+    "name": "Breathe In Vest",
+    "short_name": "BIV",
+    "start_url": "/index.html",
+    "display": "standalone",
+    "background_color": "#ffe6e6",
+    "theme_color": "#f092b0",
+    "orientation": "potrait-primary",
+    "icons": [
+        {
+            "src": "/img/favicon.png",
+            "type": "image/png",
+            "sizes": "72x72"
+        }
+    ]
+}
