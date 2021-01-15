@@ -33,51 +33,39 @@
 
 <body>
       
-  <!-- Modal -->
-  <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+<!-- Modal -->
+<div class="modal fade" class="p-0" id="exampleModalLong" tabindex="-1" role="dialog"
+    aria-labelledby="exampleModalLongTitle" aria-hidden="true">
     <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-body">
-               <!--Main Section-->
-    <div class="repwheezes-wrapper">
-  
-        <div class="repwheezes border rounded">
-            <h5>Report</h5>
+        <div class="modal-content">
+            <div class="modal-body">
+                <!--Main Section-->
+                <div class="report-wrapper text-center">
 
-            <div class="group">
-                <label for="exampleDate">Date:</label>
-            </div>
-            <div>
-                <label for="exampleTime">Time:</label>
-            </div>
-            <div class="group">
-                <label for="exampleName">Patient Name:</label>
-            </div>
-            <div class="group">
-                <label for="exampleAge">Age:</label>
-            </div>
-            <div class="group">
-                   <label for="exampleGender1">Gender:</label>
-            </div>
-            <div class="group">
-                <label for="exampleResult">Result:</label>
-            </div>
-            <div class="group">
-                <label for="examplepreca">Suggested precautions:</label>
-                <br>
-               <ul class="prec">
+                    <div class="report border rounded">
+                        <h5>Report</h5>
+                        <br>
 
-                <li>Drinking herbal tea or even some warm water can help break up any stubborn mucus. Staying hydrated is important with any type of congestion.</li>
-                <li>Inhaling moist air or steam works similarly to drinking warm liquids.</li>
-                <li>Try adding some of the following foods to your diet to reap the potential benefits of vitamin C, D and E.</li>
-                <li>Inhale slowly through your nose for two counts, then pucker your lips as if you were going to make a whistling sound. Exhale slowly for four counts. Repeat this exercise several times until you feel more at ease.</li>
-                <li>You should contact your doctor for a proper diagnosis and treatment recommendation.</li>
-   
-               </ul>
-            </div> 
-
-            <button type="button" class="btn" data-dismiss="modal" >Close</button>
-            <button class="btn">Download</button> 
+                        <form class="text-left" action="repwheezes.html">
+                            <div class="form-group">
+                                <label for="patientName">Full Name:</label>
+                                <input type="text" class="form-control" id="patientName" placeholder="Eg: John Doe"
+                                    required>
+                            </div>
+                            <div class="form-group">
+                                <label for="patientAge">Age:</label>
+                                <input type="number" class="form-control" id="patientAge" placeholder="Eg: 21" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="patientGender">Gender:</label>
+                                <input type="text" class="form-control" id="patientGender"
+                                    placeholder="Male / Female / Other" required>
+                            </div>
+                            <center>
+                            <button type="submit" class="btn mt-2 text-center" id="reportDownload">View Report</button>
+                            </center>
+                        </form>
+                        <!-- <button type="button" class="btn" data-dismiss="modal" >Close</button> -->
 
             <div class="nav-logo text-center">
 

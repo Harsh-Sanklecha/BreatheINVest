@@ -98,8 +98,8 @@ function stops() {
     max = normal
     if (asthama > max) {
         max = asthama;
-        $(location).attr('href', 'wheezes.html');
         result = "Wheezes"
+        $(location).attr('href', 'wheezes.html');
     }
     // if (covid > max) {
     //     max = covid;
@@ -107,8 +107,8 @@ function stops() {
     // }
     if (cw > max) {
         max = cw;
-        $(location).attr('href', 'crackles.html');
         result = "Crackles"
+        $(location).attr('href', 'crackles.html');
 
     }
     else{

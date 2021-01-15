@@ -18,6 +18,10 @@ body{
     // background: linear-gradient(var(--pink),#fff,#fff);
 }
 
+#defaultCanvas0{
+    display: none;
+}
+
 .modal{
 
      
@@ -108,7 +112,7 @@ body{
 
 .normal-wrapper{
     background: linear-gradient(#a1f69b,#fff);
-    height: 80vh;
+    height: 100vh;
     padding: 1%;
 
     .modal .body{
@@ -426,7 +430,6 @@ body{
     background: linear-gradient(var(--pink),#fff,#fff,#fff,#fff);
     
     .repnorm{
-        width: 40%;
         border: 1px solid #ccc;
         background: #fff;
         position: absolute;
@@ -462,6 +465,64 @@ body{
 
         .nav-logo{
             padding: 0rem 2rem 0rem 2rem;
+        }
+
+        .prec{
+            padding-left: 5%;
+            padding-bottom: 0rem;
+        }
+
+    }
+
+}
+.repwheezes-wrapper{
+    width: 50%;
+    background: linear-gradient(var(--pink),#fff,#fff,#fff,#fff);
+    
+    .repwheezes{
+        border: 1px solid #ccc;
+        background: #fff;
+        position: absolute;
+        top: 5%;
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 2rem;
+        font-family: 'Poppins';
+
+        h2{
+            font-weight: 600;
+            margin-bottom: 1rem;
+            color: #ffaec8;
+            text-align: center;  
+        } 
+            
+        label{
+            text-align: left;
+            font-weight: 600;
+            font-size: 1.1rem;
+            color: #ffaec8;
+            
+        }  
+        td{
+            padding: 0;
+        }
+        span{
+            font-weight: 600;
+            font-family: 'Poppins';
+            margin: 0 0.5rem;
+            color: #636162;
+        }
+
+        .nav-logo{
+            padding: 0rem 2rem 0rem 2rem;
+
+            img{
+                width: 10rem;
+            }
+        }
+        li{
+            font-size: 0.95rem;
+            line-height: 1.8rem;
         }
 
         .prec{
@@ -519,107 +580,36 @@ body{
             transform: none;
         }
     }
-
-.repcrack-wrapper{
-    padding-top: 1%;
-    background: linear-gradient(var(--pink),#fff,#fff,#fff,#fff);
-
-    .repcrack{
-        width: 80%;
-        background: #fff;
-        top: 70%;
-        left: 50%;
-        margin: 2rem 3rem;
-        padding: 2rem;
-
-        h5{
-            font-weight: 600;
-            font-size: 2.5rem;
-            color: #ffaec8;
-            text-align: center;
-                
-        } 
-            
-        label{
-            text-align: left;
-            font-weight: 600;
-            font-size: 1.2rem ;
-            color: #ffaec8;
-        }  
-
-        .prec{
-            padding-left: 6%;
-        }
-
-        .nav-logo{
-            padding: 2rem;
-        }
-
-        button{
-            background-color: #ffaec8;
-            padding: 0.5rem;
-            top: 50%;
-            bottom: 50%;
-            margin-left: 3.5rem;
-        }
-
-    }
-    
-    .repcrack-wrapper .body{
-        background: #fff;
-    }
-
-}
-
-.repwheezes-wrapper{
-    height: 100%;
-    background: linear-gradient(var(--pink),#fff,#fff,#fff,#fff);
-
-    .repwheezes{
-        width: 80%;
-        background: #fff;
-        top: 70%;
-        left: 50%;
-        margin: 2rem 3rem;
-        padding: 2rem;
-
-        h5{
-            font-weight: 600;
-            font-size: 2.5rem;
-            color: #ffaec8;
-            text-align: center;
-                
-        } 
-            
-        label{
-            text-align: left;
-            font-weight: 600;
-            font-size: 1.2rem ;
-            color: #ffaec8;
-        }  
-
-        .prec{
-            padding-left: 4%;
-        }
-
-        .nav-logo{
-            padding: 2rem;
-        }
-
-    }
-
     .repwheezes-wrapper .repwheezes{
-        width: 95%;
-        height: 157%;
-        top: 75%;
-        bottom: 1%;
-        padding: 1rem 1rem 1rem 1rem;
-        font-size: 1rem; 
+        width: 90%;
+        padding: 2rem;
     }
 
+
+
+
+    .bottom-caution{
+        width: 80%;
     }
-    .repwheezes-wrapper .body{
-        background: #fff;
+
+    .instructions-wrapper{
+        margin: 1.5rem;
+        transform: none;
+        padding: 1rem;
+        width: 90%;
+    }
+
+    .repnorm-wrapper{
+        padding: 1rem;
+        width: auto;
+
+
+        .repnorm{
+            padding: 1rem;
+            width: auto;
+            position: static;
+            transform: none;
+        }
     }
 
      .main-wrapper .main{
@@ -701,8 +691,8 @@ body{
     }
 
     .repwheezes-wrapper .repwheezes{
-        width: 90%;
-        top: 85%;
+        top: 2%;
+        width: 95%;
     }
 
     .normal-wrapper{

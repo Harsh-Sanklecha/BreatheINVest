@@ -32,51 +32,40 @@
 </head>
 
 <body>
-
-      <!-- Modal -->
-    <div class="modal fade" id="exampleModalLongc" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+    <!-- Modal -->
+    <div class="modal fade" class="p-0" id="exampleModalLongc" tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalLongTitle" aria-hidden="true">
         <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-body">
-                        <!--Main Section-->
-                        <div class="repcrack-wrapper">
-  
-                            <div class="repcrack border rounded">
-                                <h5>Report</h5>
-                    
-                                <div class="group">
-                                    <label for="exampleDate">Date:</label>
+            <div class="modal-content">
+                <div class="modal-body">
+                    <!--Main Section-->
+                    <div class="report-wrapper text-center">
+    
+                        <div class="report border rounded">
+                            <h5>Report</h5>
+                            <br>
+    
+                            <form class="text-left" action="repcrack.html">
+                                <div class="form-group">
+                                    <label for="patientName">Full Name:</label>
+                                    <input type="text" class="form-control" id="patientName" placeholder="Eg: John Doe"
+                                        required>
                                 </div>
-                                <div>
-                                    <label for="exampleTime">Time:</label>
+                                <div class="form-group">
+                                    <label for="patientAge">Age:</label>
+                                    <input type="number" class="form-control" id="patientAge" placeholder="Eg: 21" required>
                                 </div>
-                                <div class="group">
-                                    <label for="exampleName">Patient Name:</label>
+                                <div class="form-group">
+                                    <label for="patientGender">Gender:</label>
+                                    <input type="text" class="form-control" id="patientGender"
+                                        placeholder="Male / Female / Other" required>
                                 </div>
-                                <div class="group">
-                                    <label for="exampleAge">Age:</label>
-                                </div>
-                                <div class="group">
-                                       <label for="exampleGender1">Gender:</label>
-                                </div>
-                                <div class="group">
-                                    <label for="exampleResult">Result:</label>
-                                </div>
-                                <div class="group">
-                                    <label for="examplepreca">Suggested precautions:</label>
-                                    <br>
-                                   <ul class="prec">
-                                       <li>A humidifier to put moisture in the air and to relieve a cough.</li>
-                                       <li>Hot tea with lemon, honey, and a dash of cinnamon to help relieve a cough and fight infection.</li>
-                                       <li>Steam from a hot shower or a steam tent to help loosen phlegm.</li>
-                                       <li>A healthy diet to boost your immune system.</li>
-                                       <li>You should contact your doctor for a proper diagnosis and treatment recommendation.</li>
-                       
-                                   </ul>
-                                
-                                </div> 
-                                <button type="button" class="btn" data-dismiss="modal" >Close</button>
-                                <button class="btn">Download</button>  
+                                <center>
+                                    <button type="submit" class="btn mt-2 text-center" id="reportDownload">View
+                                        Report</button>
+                                </center>
+                            </form>
+                            <!-- <button type="button" class="btn" data-dismiss="modal" >Close</button> -->
                     
                                 <div class="nav-logo text-center">
                     
