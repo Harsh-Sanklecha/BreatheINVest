@@ -126,16 +126,23 @@ body {
 }
 
 .normal-wrapper .precautions {
+  background: #fff;
   position: absolute;
-  top: 70%;
+  top: 75%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   padding: 1rem 4rem;
 }
 
-.normal-wrapper .precautions h5 {
+.normal-wrapper .precautions ul {
   margin: 1rem 0;
+  line-height: 1.9rem;
+}
+
+.normal-wrapper .precautions h5 {
+  margin-top: 1rem;
+  margin-bottom: 0;
   font-weight: 600;
   font-size: 2.5rem;
   color: #ffaec8;
@@ -373,6 +380,7 @@ body {
 }
 
 .crackles-wrapper .precautions ul {
+  line-height: 1.9rem;
   padding: 0 2rem;
   margin: 2rem 0;
 }
@@ -576,9 +584,6 @@ body {
     width: 90%;
     padding: 2rem;
   }
-  .bottom-caution {
-    width: 80%;
-  }
   .instructions-wrapper {
     margin: 1.5rem;
     -webkit-transform: none;
@@ -621,8 +626,11 @@ body {
     padding: 0rem 1rem 0rem 2rem;
     width: 90%;
   }
+  .normal-wrapper .precautions ul {
+    line-height: 1.9rem;
+  }
   .normal-wrapper .precautions button {
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
   }
   .normal-wrapper .body {
     line-height: 1%;
@@ -644,6 +652,9 @@ body {
     -webkit-transform: translateY(50%);
             transform: translateY(50%);
   }
+  .instructions-wrapper h3 {
+    margin: 1rem 0;
+  }
   .instructions-wrapper .instruction-img-wrapper {
     display: none;
   }
@@ -656,14 +667,18 @@ body {
     height: 100vh;
   }
   .normal-wrapper .precautions {
-    margin: 1rem;
+    margin: 2rem 1rem;
     position: static;
     -webkit-transform: none;
             transform: none;
     width: auto;
   }
+  .normal-wrapper .pre {
+    margin: 1.5rem 0;
+  }
   .bottom-caution {
     padding: 0 1rem;
+    padding-bottom: 1rem;
     width: 100%;
   }
 }

@@ -136,14 +136,21 @@ body{
 
     }
     .precautions{
+        background: #fff;
         position:absolute;
-        top: 70%;
+        top: 75%;
         left: 50%;
         transform: translate(-50%,-50%);
         padding: 1rem 4rem;
 
-        h5{
+        ul{
             margin: 1rem 0;
+            line-height: 1.9rem;
+        }
+
+        h5{
+            margin-top: 1rem;
+            margin-bottom: 0;
             font-weight: 600;
             font-size: 2.5rem;
             color: #ffaec8;
@@ -372,6 +379,7 @@ body{
         }
 
         ul{
+            line-height: 1.9rem;
             padding: 0 2rem;
             margin: 2rem 0;
         }
@@ -585,10 +593,6 @@ body{
         padding: 2rem;
     }
 
-    .bottom-caution{
-        width: 80%;
-    }
-
     .instructions-wrapper{
         margin: 1.5rem;
         transform: none;
@@ -633,9 +637,13 @@ body{
         margin: 6rem 0;
         padding: 0rem 1rem 0rem 2rem;
         width: 90%;
+
+        ul{
+            line-height: 1.9rem;
+        }
         
         button{
-            margin-bottom: 1rem;
+            margin-bottom: 2rem;
         }
     }
 
@@ -662,6 +670,10 @@ body{
         transform: translateY(50%);
     }
 
+    .instructions-wrapper h3{
+        margin: 1rem 0;
+    }
+
     .instructions-wrapper .instruction-img-wrapper{
         display: none;
     }
@@ -674,15 +686,20 @@ body{
         height: 100vh;
         
         .precautions{
-            margin: 1rem;
+            margin: 2rem 1rem;
             position: static;
             transform: none;
             width: auto;
         } 
+
+        .pre{
+            margin: 1.5rem 0;
+        }
     }
 
     .bottom-caution{
         padding: 0 1rem;
+        padding-bottom: 1rem;
         width: 100%;
     }
 
