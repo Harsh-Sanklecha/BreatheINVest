@@ -635,6 +635,15 @@ body {
 }
 
 @media only screen and (max-width: 500px) {
+  .main-wrapper .main {
+    padding: 1rem;
+    left: 0;
+    top: 0;
+    -webkit-transform: none;
+            transform: none;
+    -webkit-transform: translateY(50%);
+            transform: translateY(50%);
+  }
   .instructions-wrapper .instruction-img-wrapper {
     display: none;
   }
