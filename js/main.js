@@ -94,13 +94,12 @@ function stops() {
 
 
     }
-    result = "Normal"
+    result = "normal"
     max = normal
     
     if (asthama > max) {
         max = asthama;
-        result = "Wheezes"
-        $(location).attr('href', 'wheezes.html');
+        result = "wheezes"
     }
     // if (covid > max) {
     //     max = covid;
@@ -108,13 +107,12 @@ function stops() {
     // }
     if (cw > max) {
         max = cw;
-        result = "Crackles"
-        $(location).attr('href', 'crackles.html');
+        result = "crackles"
 
     }
-    else{
-        $(location).attr('href', 'normal.html');
-    }
+    //else{
+    //    $(location).attr('href', 'normal.html');
+    //}
 
     console.log("Result:" + result);
     $(location).attr('href', result+'.html');
