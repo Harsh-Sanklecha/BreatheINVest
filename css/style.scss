@@ -495,15 +495,6 @@ body{
         bottom: 0.5%;
     }
 
-    .main-wrapper .main{
-        position: static;
-        transform: translateY(10%);
-    }
-
-
-    .main-wrapper .main .bottom-caution{
-        padding: 1rem;
-    }
 
     .bottom-caution{
         width: 80%;
@@ -632,6 +623,7 @@ body{
     }
 
      .main-wrapper .main{
+        padding: 1rem;
         position: static;
         transform: translateY(10%);
     }
@@ -718,7 +710,6 @@ body{
     }
 
     .bottom-caution{
-        margin: 1rem 0;
         padding: 0.5rem;
         width: 100%;
     }

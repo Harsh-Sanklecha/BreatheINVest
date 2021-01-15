@@ -487,14 +487,6 @@ body {
   .repnorm-wrapper .nav-logo {
     bottom: 0.5%;
   }
-  .main-wrapper .main {
-    position: static;
-    -webkit-transform: translateY(10%);
-            transform: translateY(10%);
-  }
-  .main-wrapper .main .bottom-caution {
-    padding: 1rem;
-  }
   .bottom-caution {
     width: 80%;
   }
@@ -600,6 +592,7 @@ body {
     background: #fff;
   }
   .main-wrapper .main {
+    padding: 1rem;
     position: static;
     -webkit-transform: translateY(10%);
             transform: translateY(10%);
@@ -672,7 +665,6 @@ body {
     height: 120vh;
   }
   .bottom-caution {
-    margin: 1rem 0;
     padding: 0.5rem;
     width: 100%;
   }
