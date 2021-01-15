@@ -96,6 +96,7 @@ function stops() {
     }
     result = "Normal"
     max = normal
+    
     if (asthama > max) {
         max = asthama;
         result = "Wheezes"
@@ -116,6 +117,7 @@ function stops() {
     }
 
     console.log("Result:" + result);
+    $(location).attr('href', result+'.html');
 }
 
 
