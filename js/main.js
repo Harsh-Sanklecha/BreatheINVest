@@ -94,6 +94,7 @@ function stops() {
 
 
     }
+    
     result = "normal"
     max = normal
     
