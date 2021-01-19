@@ -33,18 +33,6 @@
   
 </head>
 <body>
-    <!-- popup notification starts -->
-    <script>
-      if ('serviceWorker' in navigator) {
-        console.log("Will service worker register?");
-        navigator.serviceWorker.register('https://www.YOUR-WEBSITE.com/service-worker.js').then(function(reg){
-          console.log("Yes it did.");
-        }).catch(function(err) {
-          console.log("No it didn't. This happened: ", err)
-        });
-      }
-    </script>
-    <!-- popup notification ends -->
 
 
     <!-- Modal Starts -->
