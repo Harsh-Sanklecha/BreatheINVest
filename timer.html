@@ -25,9 +25,22 @@
     <link rel="manifest" href="/manifest.json">
     <meta name="theme-color" content="#f092b0">
     <title>Count Down</title>
+    
    
 </head>
 <body>
+       <!-- popup notification starts -->
+       <script>
+        if ('serviceWorker' in navigator) {
+          console.log("Will service worker register?");
+          navigator.serviceWorker.register('https://www.YOUR-WEBSITE.com/service-worker.js').then(function(reg){
+            console.log("Yes it did.");
+          }).catch(function(err) {
+            console.log("No it didn't. This happened: ", err)
+          });
+        }
+      </script>
+      <!-- popup notification ends -->
     
     <!-- Start Navigation-bar -->
     <div class="navigation-bar">
@@ -107,10 +120,8 @@
         <i class="fas fa-exclamation-triangle"></i>
         <p class="mb-1"> Before using this product carefuly read the mannual, Do not take any medical decision without consulting a doctor.</p>
     </div>
-
-
-    <!-- Main Code End -->
-
+    
+           <!-- Main Code End -->
  <!-- JQuery JS -->
  <script src="js/jquery.3.5.1.js"></script>
     
