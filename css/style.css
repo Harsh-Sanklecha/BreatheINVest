@@ -205,6 +205,84 @@ body {
   }
 }
 
+.holder {
+  background-color: #bbb2bb;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#4c474c), to(#141414));
+  background-image: linear-gradient(0deg, #4c474c 0%, #141414 100%);
+  border-radius: 50px;
+  width: 50%;
+  margin-top: 5%;
+  margin-left: 25%;
+  margin-bottom: 5%;
+}
+
+.holder [data-role="controls"] > button {
+  margin: auto;
+  outline: none;
+  display: block;
+  border: none;
+  background-color: #D9AFD9;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#D9AFD9), to(#ffaec8));
+  background-image: linear-gradient(0deg, #D9AFD9 0%, #ffaec8 100%);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  text-indent: -1000em;
+  cursor: pointer;
+  -webkit-box-shadow: 0px 5px 5px 2px rgba(0, 0, 0, 0.3) inset, 0px 0px 0px 30px #fff, 0px 0px 0px 35px #333;
+          box-shadow: 0px 5px 5px 2px rgba(0, 0, 0, 0.3) inset, 0px 0px 0px 30px #fff, 0px 0px 0px 35px #333;
+}
+
+.holder [data-role="controls"] > button:hover {
+  background-color: #ee7bee;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#ee7bee), to(#f56fea));
+  background-image: linear-gradient(0deg, #ee7bee 0%, #f56fea 100%);
+}
+
+.holder [data-role="controls"] > button[data-recording="true"] {
+  background-color: #ff2038;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#ff2038), to(#b30003));
+  background-image: linear-gradient(0deg, #ff2038 0%, #b30003 100%);
+}
+
+.holder [data-role="recordings"] > .row {
+  width: 100%;
+  height: 50%;
+  padding: 3.5rem 9rem 2rem;
+}
+
+.holder [data-role="recordings"] > .row > audio {
+  outline: none;
+}
+
+.holder [data-role="recordings"] > .row > a {
+  display: inline-block;
+  text-align: center;
+  font-size: 20px;
+  line-height: 50px;
+  vertical-align: middle;
+  width: 50px;
+  height: 50px;
+  border-radius: 20px;
+  color: #fff;
+  font-weight: bold;
+  text-decoration: underline;
+  background-color: #ffaec8;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#ffaec8), to(#ffaec8));
+  background-image: linear-gradient(0deg, #ffaec8 0%, #ffaec8 100%);
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+.holder [data-role="recordings"] > .row > a:hover {
+  text-decoration: none;
+}
+
+.holder [data-role="recordings"] > .row > a:active {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#e900af), to(#d080b5));
+  background-image: linear-gradient(180deg, #e900af 0%, #d080b5 100%);
+}
+
 .instructions-wrapper {
   margin: 1rem 0;
   background: #fff;
