@@ -6,7 +6,7 @@ self.addEventListener('install', function(event) {
   self.addEventListener('activate', function(event) {
    console.log('[Service Worker] Activating Service Worker ....', event);
   });
-  //fetch event
+  // fetch event
   self.addEventListener('fetch', function(event) {
     event.respondWith(
   caches.match(event.request).then(function(response) {
