@@ -60,17 +60,20 @@
         </button>
         <a href="/audio.html"></a>
     </div>
+    <button onclick="setups()">Rec</button>
+    <button onclick="startRec()">Rec</button>
+    <button onclick="stopRec()">Stop</button>
     <script src="https://stephino.github.io/dist/recorder.js"></script>
     <div class="holder">
-    <div data-role="controls">
-        <button>Record</button>
-    </div>
-    <div data-role="recordings">
-        <div class="row">
-            <audio controls></audio>
-            <a>&#9660;</a>
+        <div data-role="controls">
+            <button>Record</button>
         </div>
-    </div>
+        <div data-role="recordings">
+            <!-- <div class="row">
+                <audio controls></audio>
+                <a>&#9660;</a>
+            </div> -->
+        </div>
     </div> 
     <div class="instructions-wrapper text-center border">
         <h3>Make sure <span>!</span></h3>

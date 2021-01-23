@@ -53,6 +53,11 @@ var myRecorder = {
                         .append(audioObject)
                         .append(downloadObject);
 
+                        
+                    url = "blob:http://"+url
+
+                    sessionStorage.setItem("audio", url);
+
                     // Append to the list
                     listObject.append(holderObject);
                 });
@@ -81,7 +86,6 @@ $('[data-role="controls"] > button').click(function () {
         myRecorder.stop(listObject);
     }
 });
-
 
 var d = new Date();
 
@@ -207,7 +211,6 @@ function stops() {
 
 /* Start Button */
 $('#startButton').click(function(){
-
     myTimer(15);
     $('#startButton').css("display", "none");
     $('#stopButton').css("display","block");
@@ -215,7 +218,6 @@ $('#startButton').click(function(){
 
 /* Stop Button */
 $('#stopButton').click(function(){
-    console.log(audioObject);
     myTimerStop();
     $('#stopButton').css("display", "none");
     $('#startButton').css("display","block");
@@ -225,6 +227,7 @@ $('#stopButton').click(function(){
 
 $(document).ready(function () {
     $("#reportDownload").click(function(){
+
         var Pname = $("#patientName").val();
         var age = $("#patientAge").val();
         var gender = $("#patientGender").val();
@@ -232,13 +235,11 @@ $(document).ready(function () {
         sessionStorage.setItem("Pname", Pname);
         sessionStorage.setItem("age", age);
         sessionStorage.setItem("gender", gender);
-
-        
-        console.log(Pname,age,gender);
     });
 });
 
 $(document).ready(function () {
+
     reportPname = sessionStorage.getItem("Pname");
     reportage = sessionStorage.getItem("age");
     reportgender = sessionStorage.getItem("gender");
@@ -253,7 +254,7 @@ $(document).ready(function () {
 
 if ('serviceWorker' in navigator) {
     console.log("Will service worker register?");
-    navigator.serviceWorker.register('js/serviceWorker.js').then(function (reg) {
+    navigator.serviceWorker.register('serviceWorker.js').then(function (reg) {
         console.log("Yes it did.");
     }).catch(function (err) {
         console.log("No it didn't. This happened: ", err)
