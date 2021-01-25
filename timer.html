@@ -29,6 +29,150 @@
    
 </head>
 <body>
+    <div class="modal fade" class="p-0" id="normalModalLong" tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <!-- <a href="report.html"></a> -->
+                    <!--Main Section-->
+                    <div class="report-wrapper text-center">
+    
+                        <div class="report border rounded">
+                            <h5>Report</h5>
+                            <br>
+    
+                            <form class="text-left" action="repnorm.html">
+                                <div class="form-group">
+                                    <label for="patientName">Full Name:</label>
+                                    <input type="text" class="form-control" id="patientName" placeholder="Eg: John Doe"
+                                        required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="patientAge">Age:</label>
+                                    <input type="number" class="form-control" id="patientAge" placeholder="Eg: 21" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="patientGender">Gender:</label>
+                                    <input type="text" class="form-control" id="patientGender"
+                                        placeholder="Male / Female / Other" required>
+                                </div>
+                                <center>
+                                    <button type="submit" class="btn mt-2 text-center" id="reportDownload">View
+                                        Report</button>
+                                </center>
+                            </form>
+                            <!-- <button type="button" class="btn" data-dismiss="modal" >Close</button> -->
+    
+                            <div class="nav-logo">
+    
+                                <img src="img/nav-logo.png">
+    
+                            </div>
+    
+                        </div>
+    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" class="p-0" id="wheezesModalLong" tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <!--Main Section-->
+                    <div class="report-wrapper text-center">
+    
+                        <div class="report border rounded">
+                            <h5>Report</h5>
+                            <br>
+    
+                            <form class="text-left" action="repwheezes.html">
+                                <div class="form-group">
+                                    <label for="patientName">Full Name:</label>
+                                    <input type="text" class="form-control" id="patientName" placeholder="Eg: John Doe"
+                                        required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="patientAge">Age:</label>
+                                    <input type="number" class="form-control" id="patientAge" placeholder="Eg: 21" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="patientGender">Gender:</label>
+                                    <input type="text" class="form-control" id="patientGender"
+                                        placeholder="Male / Female / Other" required>
+                                </div>
+                                <center>
+                                    <button type="submit" class="btn mt-2 text-center" id="reportDownload">View
+                                        Report</button>
+                                </center>
+                            </form>
+                            <!-- <button type="button" class="btn" data-dismiss="modal" >Close</button> -->
+    
+                            <div class="nav-logo text-center">
+    
+                                <img src="img/nav-logo.png">
+    
+                            </div>
+    
+                        </div>
+    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" class="p-0" id="cracklesModalLong" tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <!--Main Section-->
+                    <div class="report-wrapper text-center">
+    
+                        <div class="report border rounded">
+                            <h5>Report</h5>
+                            <br>
+    
+                            <form class="text-left" action="repcrack.html">
+                                <div class="form-group">
+                                    <label for="patientName">Full Name:</label>
+                                    <input type="text" class="form-control" id="patientName" placeholder="Eg: John Doe"
+                                        required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="patientAge">Age:</label>
+                                    <input type="number" class="form-control" id="patientAge" placeholder="Eg: 21" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="patientGender">Gender:</label>
+                                    <input type="text" class="form-control" id="patientGender"
+                                        placeholder="Male / Female / Other" required>
+                                </div>
+                                <center>
+                                    <button type="submit" class="btn mt-2 text-center" id="reportDownload">View
+                                        Report</button>
+                                </center>
+                            </form>
+                            <!-- <button type="button" class="btn" data-dismiss="modal" >Close</button> -->
+    
+                            <div class="nav-logo text-center">
+    
+                                <img src="img/nav-logo.png">
+    
+                            </div>
+    
+                        </div>
+    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     
     <!-- Start Navigation-bar -->
     <div class="navigation-bar">
@@ -50,79 +194,234 @@
 
     <!-- Main Code Start -->
 
+    <section id="timerPage">
+        <div class="button-start">
+            <button class="btn border" id="startButton" onclick="starts();">
+                Start
+            </button>
+        
+            <button class="btn border" id="stopButton" style="display:none">
+                <h3 style="font-weight: 100;"> Keep <br> Breathing! </h3> <b>00:<span id="time-left">15</span> </b>
+            </button>
+            <a href="/audio.html"></a>
+        </div>
+        <div class="instructions-wrapper text-center border">
+            <h3>Make sure <span>!</span></h3>
+        
+            <div class="instruction-img-wrapper row m-0">
+                <div class="instruction-img col-4">
+                    <div class="instruction">
+                        <img src="img/man-vest.png">
+                        <p class="mt-2">Placement</p>
+                    </div>
+                </div>
+                <div class="instruction-img col-4">
+                    <div class="instruction">
+                        <img src="img/timer-circle.png">
+                        <p class="mt-2">Deep Breathe for 15 sec</p>
+                    </div>
+                </div>
+                <div class="instruction-img col-4">
+                    <div class="instruction">
+                        <img src="img/side-vest.png" alt="">
+                        <p class="mt-2">Fit</p>
+                    </div>
+                </div>
+            </div>
+            <div class="instruction-img-wrapper-mobile row m-0">
+                <div class="instruction-img col-12">
+                    <div class="instruction">
+                        <img src="img/timer-circle.png">
+                        <p class="mt-2">Deep Breathe for 15 sec</p>
+                    </div>
+                </div>
+                <div class="instruction-img col-6">
+                    <div class="instruction">
+                        <img src="img/man-vest.png">
+                        <p class="mt-2">Placement</p>
+                    </div>
+                </div>
+                <div class="instruction-img col-6">
+                    <div class="instruction">
+                        <img src="img/side-vest.png" alt="">
+                        <p class="mt-2">Fit</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bottom-caution d-flex align-items-center text-left">
+            <i class="fas fa-exclamation-triangle"></i>
+            <p class="mb-1"> Before using this product carefuly read the manual, Do not take any medical decision without
+                consulting a doctor.</p>
+        </div>
+    </section>
 
-    <div class="button-start">
-        <button class="btn border" id="startButton" onclick="starts();">
-            Start
-        </button>
-        <button class="btn border" id="stopButton" style="display:none">
-            <h3 style="font-weight: 100;"> Keep <br> Breathing! </h3> <b>00:<span id="time-left">15</span> </b>
-        </button>
-        <a href="/audio.html"></a>
-    </div>
-    <button onclick="setups()">Rec</button>
-    <button onclick="startRec()">Rec</button>
-    <button onclick="stopRec()">Stop</button>
-    <script src="https://stephino.github.io/dist/recorder.js"></script>
-    <div class="holder">
-        <div data-role="controls">
-            <button>Record</button>
-        </div>
-        <div data-role="recordings">
-            <!-- <div class="row">
-                <audio controls></audio>
-                <a>&#9660;</a>
-            </div> -->
-        </div>
-    </div> 
-    <div class="instructions-wrapper text-center border">
-        <h3>Make sure <span>!</span></h3>
+    <section id="normal">
+        <div class="normal-wrapper text-center">
+        
+            <h3><b>Normal</b></h3>
+            <p>You're good to go!
+            </p>
+            <div class="precautions border rounded">
+                <h5>Precautions</h5>
+        
+                <ul>
+                    <div class="pre text-left">
+                        <li>Avoid exposure to indoor pollutants that can damage your lungs.</li>
+                        <li>Minimize exposure to outdoor air pollution.</li>
+                        <li>Prevent infection. Wash your hands often with soap and water. Alcohol-based cleaners are a good
+                            substitute if you cannot wash.</li>
+                        <li>Regular check-ups help prevent diseases, even when you are feeling well.</li>
+                        <li>Whether you are young or old, slender or large, able-bodied or living with a chronic illness or
+                            disability, being physically active can help keep your lungs healthy.</li>
+                    </div>
+                </ul>
+                <button class="btn btn-outline-info" onclick="playFile()"><i class="fas fa-play-circle"></i></button>
+                <button class="btn reportBtn" data-toggle="modal" data-target="#normalModalLong">View Report</button>
+                <button class="btn btn-outline-success" onclick="saveFile()"><i class="fas fa-download"></i></button>
+            </div>
+    </section>
 
-        <div class="instruction-img-wrapper row m-0">
-            <div class="instruction-img col-4">
-                <div class="instruction">
-                    <img src="img/man-vest.png">
-                    <p class="mt-2">Placement</p>
+
+    <section id="wheezes">
+        <div class="crackles-wrapper text-center">
+        
+            <h2><b>Wheezes</b></h2>
+            <p>Relax! Just follow the below.</p>
+            <div class="precautions-wrapper text-center row m-0">
+                <div class="precautions col-lg-6">
+                    <div class="precautions-inner border rounded  ">
+                        <h4>Precautions</h4>
+                        <ul>
+                            <div class="text-left">
+                                <li>Drinking herbal tea or even some warm water can help break up any stubborn mucus. Staying
+                                    hydrated is important with any type of congestion.
+                                </li>
+                                <li>Inhaling moist air or steam works similarly to drinking warm liquids.
+                                </li>
+                                <li>Try adding some of the following foods to your diet to reap the potential benefits of
+                                    vitamin C, D and E.
+                                </li>
+                                <li>Inhale slowly through your nose for two counts, then pucker your lips as if you were going
+                                    to make a whistling sound. Exhale slowly for four counts. Repeat this exercise several times
+                                    until you feel more at ease.</li>
+                                <li>You should contact your doctor for a proper diagnosis and treatment recommendation.</li>
+        
+                            </div>
+                        </ul>
+                        <button class="btn btn-outline-info" onclick="playFile()"><i class="fas fa-play-circle"></i></button>
+                        <button class="btn reportBtn" data-toggle="modal" data-target="#wheezesModalLong">View Report</button>
+                        <button class="btn btn-outline-success" onclick="saveFile()"><i class="fas fa-download"></i></button>
+                    </div>
                 </div>
-            </div>
-            <div class="instruction-img col-4">
-                <div class="instruction">
-                    <img src="img/timer-circle.png">
-                    <p class="mt-2">Deep Breathe for 15 sec</p>
-                </div>
-            </div>
-            <div class="instruction-img col-4">
-                <div class="instruction">
-                    <img src="img/side-vest.png" alt="">
-                    <p class="mt-2">Fit</p>
+                <div class="precautions col-lg-6  text-center">
+                    <div class="precautions-inner border rounded  ">
+                        <h4>Recommended consultations</h4>
+                        <div class="recommended-consultations  row m-0 ">
+        
+                            <div class="recommended-consultations-inner border rounded   col-sm-4">
+                                <div class="consultations ">
+                                    <img src="img/drpradyut.png">
+                                    <h6>Dr. Pradyut Waghray</h6>
+                                    <p> (MBBS; MD; FCCP; DSc)
+                                    </p>
+        
+                                </div>
+                            </div>
+                            <div class="recommended-consultations-inner border rounded col-sm-4">
+                                <div class="consultations">
+                                    <img src="img/drdinesh.png">
+                                    <h6>Dr. V Dinesh Reddy</h6>
+                                    <p>(MBBSs, MD)
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="recommended-consultations-inner border rounded col-sm-4">
+                                <div class="consultations ">
+                                    <img src="img/drchandrakant.png">
+                                    <h6>Dr. Chandrakant Tarke</h6>
+                                    <p> (DM , MD, DNB)
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <button class="btn">See More</button> -->
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="instruction-img-wrapper-mobile row m-0">
-            <div class="instruction-img col-12">
-                <div class="instruction">
-                    <img src="img/timer-circle.png">
-                    <p class="mt-2">Deep Breathe for 15 sec</p>
+        </div>
+
+    </section>
+
+    <section id="crackles">
+        <div class="crackles-wrapper text-center">
+    
+            <h2><b>Crackles</b></h2>
+            <p>Relax! Just follow the precautions below.</p>
+            <div class="precautions-wrapper text-center row m-0">
+                <div class="precautions col-lg-6">
+                    <div class="precautions-inner border rounded  ">
+                        <h4>Precautions</h4>
+                        <ul>
+                            <div class="text-left">
+                                <li>A humidifier to put moisture in the air and to relieve a cough.
+                                </li>
+                                <li>Hot tea with lemon, honey, and a dash of cinnamon to help relieve a cough and fight
+                                    infection.</li>
+                                <li>Steam from a hot shower or a steam tent to help loosen phlegm.
+                                </li>
+                                <li>A healthy diet to boost your immune system.</li>
+                                <li>You should contact your doctor for a proper diagnosis and treatment recommendation.</li>
+    
+                            </div>
+                        </ul>
+                        <button class="btn btn-outline-info" onclick="playFile()"><i
+                                class="fas fa-play-circle"></i></button>
+                        <button class="btn reportBtn" data-toggle="modal" data-target="#cracklesModalLong">View
+                            Report</button>
+                        <button class="btn btn-outline-success" onclick="saveFile()"><i
+                                class="fas fa-download"></i></button>
+                    </div>
                 </div>
-            </div>
-            <div class="instruction-img col-6">
-                <div class="instruction">
-                    <img src="img/man-vest.png">
-                    <p class="mt-2">Placement</p>
-                </div>
-            </div>
-            <div class="instruction-img col-6">
-                <div class="instruction">
-                    <img src="img/side-vest.png" alt="">
-                    <p class="mt-2">Fit</p>
+                <div class="precautions col-lg-6  text-center">
+                    <div class="precautions-inner border rounded  ">
+                        <h4>Recommended consultations</h4>
+                        <div class="recommended-consultations row m-0 ">
+    
+                            <div class="recommended-consultations-inner border rounded  col-sm-4">
+                                <div class="consultations ">
+                                    <img src="img/drpradyut.png">
+                                    <h6>Dr. Pradyut Waghray</h6>
+                                    <p> (MBBS; MD; FCCP; DSc)
+                                    </p>
+    
+                                </div>
+                            </div>
+                            <div class="recommended-consultations-inner border rounded col-sm-4">
+                                <div class="consultations">
+                                    <img src="img/drdinesh.png">
+                                    <h6>Dr. V Dinesh Reddy</h6>
+                                    <p>(MBBS, MD)
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="recommended-consultations-inner border rounded col-sm-4">
+                                <div class="consultations ">
+                                    <img src="img/drchandrakant.png">
+                                    <h6>Dr. Chandrakant Tarke</h6>
+                                    <p> (DM , MD, DNB)
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <button class="btn">See More</button> -->
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="bottom-caution d-flex align-items-center text-left">
-        <i class="fas fa-exclamation-triangle"></i>
-        <p class="mb-1"> Before using this product carefuly read the manual, Do not take any medical decision without consulting a doctor.</p>
-    </div>
+    
+    </section>
     
            <!-- Main Code End -->
  <!-- JQuery JS -->
@@ -132,6 +431,7 @@
  <script src="js/bootstrap.min.js"></script>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.10.2/addons/p5.sound.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.dom.min.js"></script>
 <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
 
