@@ -8,8 +8,8 @@ function myTimer(sec) {
     timer = setInterval(function () {
         $('#timer').text(sec--);
         if (sec == 0) {
-            recorder.stop();
             clearInterval(timer);
+            recorder.stop();
             stops();
         }
         timeLeftDisplay.innerHTML = sec
@@ -39,8 +39,7 @@ let mic, recorder, soundFile;
 
 function setup() {
 
-    classifyAudio();
-    noLoop();
+    
 
     // create an audio in
     mic = new p5.AudioIn();
@@ -56,6 +55,9 @@ function setup() {
 
     // create an empty sound file that we will use to playback the recording
     soundFile = new p5.SoundFile();
+
+    classifyAudio();
+    noLoop();
 }
 
 // STEP 2 classify!
@@ -143,7 +145,11 @@ function stops() {
 
 /* Start Button */
 $('#startButton').click(function(){
-    recorder.record(soundFile);
+    if (mic.enabled) {
+        recorder.record(soundFile);
+    } else {
+        alert("Give Permissions to record")
+    }
     myTimer(15);
     $('#startButton').css("display", "none");
     $('#stopButton').css("display","block");
@@ -151,8 +157,8 @@ $('#startButton').click(function(){
 
 /* Stop Button */
 $('#stopButton').click(function () {
-    recorder.stop();
     myTimerStop();
+    recorder.stop();
     $('#stopButton').css("display", "none");
     $('#startButton').css("display","block");
 });
