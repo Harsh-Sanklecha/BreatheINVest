@@ -259,13 +259,12 @@
     <section id="normal">
         <div class="normal-wrapper text-center">
         
-            <h3><b>Normal</b></h3>
-            <p>You're good to go!
-            </p>
+            <h3 id="kuchaur"><b></b></h3>
+            <p id="kyatohbhi"></p>
             <div class="precautions border rounded">
-                <h5>Precautions</h5>
-        
-                <ul>
+                <!-- <h5>Precaution</h5> -->
+                <canvas id="myChart" width="400" height="400"></canvas><br><br>
+                <!-- <ul>
                     <div class="pre text-left">
                         <li>Avoid exposure to indoor pollutants that can damage your lungs.</li>
                         <li>Minimize exposure to outdoor air pollution.</li>
@@ -275,11 +274,12 @@
                         <li>Whether you are young or old, slender or large, able-bodied or living with a chronic illness or
                             disability, being physically active can help keep your lungs healthy.</li>
                     </div>
-                </ul>
+                </ul> -->
                 <button class="btn btn-outline-info" onclick="playFile()"><i class="fas fa-play-circle"></i></button>
                 <button class="btn reportBtn" data-toggle="modal" data-target="#normalModalLong">View Report</button>
                 <button class="btn btn-outline-success" onclick="saveFile()"><i class="fas fa-download"></i></button>
             </div>
+
     </section>
 
 
@@ -292,6 +292,8 @@
                 <div class="precautions col-lg-6">
                     <div class="precautions-inner border rounded  ">
                         <h4>Precautions</h4>
+                        <canvas id="myChart" width="400" height="400"></canvas>
+
                         <ul>
                             <div class="text-left">
                                 <li>Drinking herbal tea or even some warm water can help break up any stubborn mucus. Staying
@@ -317,6 +319,8 @@
                 <div class="precautions col-lg-6  text-center">
                     <div class="precautions-inner border rounded  ">
                         <h4>Recommended consultations</h4>
+                <canvas id="myChart" width="400" height="400"></canvas>
+
                         <div class="recommended-consultations  row m-0 ">
         
                             <div class="recommended-consultations-inner border rounded   col-sm-4">
@@ -434,7 +438,9 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.10.2/addons/p5.sound.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.dom.min.js"></script>
 <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
-
+<script src="https://cdn.jsdelivr.net/npm/chart.js@3.3.0/dist/chart.min.js"></script>
+<script>
+</script>
  <!-- Custom JS -->
  <script src="js/main.js"></script>
 </body>

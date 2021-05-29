@@ -103,10 +103,18 @@ body {
 }
 
 .normal-wrapper {
+  position: absolute;
   background: -webkit-gradient(linear, left top, left bottom, from(#a1f69b), to(#fff));
   background: linear-gradient(#a1f69b, #fff);
-  height: 100vh;
   padding: 1%;
+  min-width: 100%;
+  padding: 2rem 5rem;
+}
+
+@media screen and (max-width: 992px) {
+  .normal-wrapper {
+    padding: 1rem 0 !important;
+  }
 }
 
 .normal-wrapper .modal .body {
@@ -116,7 +124,6 @@ body {
 .normal-wrapper h3 {
   color: var(--grey);
   text-transform: uppercase;
-  margin-top: 2rem;
   font-weight: 800;
   font-size: 3rem;
   font-family: "Poppins";
@@ -130,12 +137,14 @@ body {
 }
 
 .normal-wrapper .precautions {
+  margin: auto;
   background: #fff;
-  position: absolute;
-  top: 75%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  /* position: absolute; */
+  /* top: 75%; */
+  /* left: 50%; */
+  /* -webkit-transform: translate(-50%, -50%); */
+  /* transform: translate(-50%, -50%); */
+  width: 50%;
   padding: 1rem 4rem;
 }
 
@@ -611,6 +620,7 @@ body {
     padding: 1rem;
   }
   .normal-wrapper {
+    position: relative;
     padding-top: 0.5%;
     padding-bottom: 0.5%;
   }
